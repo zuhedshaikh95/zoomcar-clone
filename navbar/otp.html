@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otp Form</title>
+    <link rel="stylesheet" href="./styles/otp.css" />
+  </head>
+  <body>
+    <div id="logProc" data-aos="fade-up" class="animated fadeInUpBig">
+      <div>
+        <a href="./login-page.html">
+          <i class="fa-solid fa-arrow-left-long"></i
+        ></a>
+      </div>
+      <h3>Enter 6-digit OTP</h3>
+      <p>OTP was sent to +91<span id="mNum"></span> <a href="./login-page.html" id="edit"> Edit</a></p>
+      <input
+        type="tel"
+        id="otp"
+        placeholder="Enter OTP"
+        oninput="verifyOtp()"       
+      />
+      <p>Resend OTP</p>
+      <p>Use Password</p>
+      <button id="btn2" onclick="validateOtp()">CONTINUE</button>
+    </div>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/445205b9df.js"
+  crossorigin="anonymous"
+></script>
+<script src="./scripts/otp.js"></script>
