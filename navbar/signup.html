@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles/signup.css" />
+  </head>
+  <body>
+    <div id="logProc" data-aos="fade-up" class="animated fadeInUpBig">
+      <div>
+        <a href="./login-page.html">
+          <i class="fa-solid fa-arrow-left-long"></i
+        ></a>
+      </div>
+      <h3>Please Fill Some Details</h3>
+      <p>one last step to create new account</p>
+      <div id="contnum">
+        <div id="cont">
+          <img src="./images/india-flag-icon.png" alt="error" />
+          <p>+91</p>
+        </div>
+        <input type="tel" id="ip1" placeholder="Mobile Number" />
+      </div>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Name As Per Driving License"
+      />
+      <input type="email" id="email" placeholder="email" />
+      <select id="selectcity">
+        <option>Select City</option>
+        <option value="Pune">Pune</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bangalore">Bangalore</option>
+      </select>
+      <input type="password" id="pass" placeholder="Enter Password" />
+
+      <button id="btn1" onclick="rgister()">CONTINUE</button>
+    </div>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/445205b9df.js"
+  crossorigin="anonymous"
+></script>
+<script src="./scripts/signup.js"></script>
