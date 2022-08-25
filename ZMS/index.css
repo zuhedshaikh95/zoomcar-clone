@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Open+Sans&display=swap");
+*{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
 #container1{
     height: 600px;
     width:100%;
@@ -407,4 +412,39 @@ input:hover{
 #submit{
   margin-left: 40%;
   margin-top: 3%;
+}
+#container10{
+  width: 100%;
+  height: 20px;
+  background-color: green;
+  margin-top: 20%;
+}
+#container11{
+  height: 350px;
+  width: 100%;
+  background-color: black;
+  margin-top: -1.3%;
+}
+#container11>p{
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+}
+#logo{
+  width: 10%;
+  height: 20px;
+  margin: auto;
+  margin-left: 45%;
+  margin-top: 3%;
+}
+#container11>h5{
+  color: white;
+}
+#container11>p+#para{
+  margin-top: -5%;
+}
+#logo+h5{
+  margin-left: 40%;
+  margin-top: 2%;
+  color: gray;
 }
