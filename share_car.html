@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://www.zoomcar.com/fav/favicon.png" rel="shortcut icon"
+    type="image/png">
+    <title>Share your car &|Zoomcar</title>
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        font-family:'IBM Plex Sans',sans-serif ;
+      }
+      #comp_rapid_growing {
+        width: 70vw;
+        margin: auto;    padding: 32px auto;
+      }
+      .rapid_growing {
+        font-size: 42px;
+        font-family: IBM Plex Sans;
+        font-weight: 600;
+        line-height: 1.29;
+        margin-bottom: 7vh;
+      }
+      .rapid_growing_p {
+        /* overflow-x: scroll; */
+        padding-top: 8px;
+        /* font-family: s; */
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.24px;
+        color: #666;
+      }
+      #Exprience_data {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* margin-top: ; */margin-bottom: 5vh;
+      }
+      #Exprience_data > div {
+        background-color: #fff;
+        padding: 8px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 132px;
+        margin: 32px 0 0;
+        grid-gap: 1px;
+        border-right: 1px solid #a8a8a857;
+      }
+      #Exprience_data > :nth-child(4) {
+        border: none;
+      }
+      #Exprience_data > div > h5 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.33;
+        padding: 16px 0 12px;
+      }
+      #Exprience_data > div > p {
+        color: #a8a8a8;
+      }
+      @media all and  (max-width: 768px) {
+        #Exprience_data {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        
+      }
+      /* calulator part................... */
+      #calculatorBox {
+        padding: 24px 40px;margin-bottom: 5vh;
+      }
+      #calculatorBox > h4 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3vw;
+        font-weight: 645;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+        margin-bottom: 16px;
+      }
+      #calculatorBox > h4 > span {
+        color: #10a310;
+      }
+      #calculatorBox > button,
+      #priceDetails > div > div > button {
+        background-color: #10a310;
+        color: white;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.14;
+        letter-spacing: 0.8px;
+        padding: 16px 20px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      #calculatorBox > a {
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        color: #10a310;
+      }
+
+
+@media all and (min-width: 403px) and (max-width: 803px) {
+  /*  #calculatorBox > button {} */
+  
+  #calculatorBox > button {
+  padding: 2vw 2vw;
+  font-size: 12px;
+  }
+
+}
+@media all and (max-width: 402px) {
+   #calculatorBox > button {
+padding: 1vw 2vw;
+font-size: 10px;
+  }
+  #calculatorBox > h4 {
+   font-size: 5vw; 
+  }
+}
+
+      /* below claculator black box */
+      #priceDetails {
+        background-image: linear-gradient(270deg, #444, #000);
+        color: white;
+        padding: 50px 60px;
+        border-radius: 20px;
+      
+      }
+      .flexdiv {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        gap: 10%;
+        /* border: 1px solid #eee; */
+      }
+      .flexdiv > div > h5 {
+        font-size: 2em;
+        font-weight: 550;
+        line-height: 1.5;
+        letter-spacing: 0.24px;
+        width: 20vw;
+        margin: 0px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      }
+      .flexdiv > img {
+        width: 25vw;
+      }
+      #priceDetails > p {
+        letter-spacing:.21px;       
+        display: block;
+        margin-bottom: 0px;
+        text-align: justify;
+      }
+      
+      @media all and (min-width: 403px) and (max-width: 803px) {
+        /* .flexdiv {
+          border: 1px solid rgb(149, 21, 21);
+          grid-template-columns: 70% 10% ;
+          
+        } */
+        .flexdiv > div > h5 {
+        font-size: 17px;
+      }
+      #priceDetails > div > div > button {
+        padding: 5px 5px ;
+        margin-top: 10px;
+      }
+      #priceDetails > p {
+       font-size: 13px;
+       text-align: left;
+
+      }
+}
+@media all and (max-width: 402px) {
+  .flexdiv > div > h5 {
+        font-size: 16px;
+      }
+      #priceDetails > div > div > button {
+        padding: 5px 5px ;
+        margin-top: 10px;
+      }
+      #priceDetails > p {
+        display: none;
+      }
+      .flexdiv > img {
+        width: 20vw;
+      }
+}
+
+      /* raing */
+      #rating {
+        background-color: #f5f5f5;
+        display: flex;
+  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      #rating > h5 {
+        font-size: 24px;
+        line-height: 1.33;
+        color: #1f1f1f;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #rating>video{
+        width: 40vw;
+      }
+      #carsDetails {
+        width: 100%;
+        padding: 40px 0px 40px 24px;
+        background-color: #f5f5f5;
+        /* border: 1px solid rgb(172, 21, 21); */
+        margin: 24px 0px 40px 0px;
+        display: grid;
+        grid-template-columns: 212px auto;
+        gap: 7vw;
+        overflow-x: scroll;
+      }
+      #carsDetails > section:nth-child(1) {
+        width: 15vw;
+        margin-right: 20px;
+        font-weight: 600;
+        line-height: 1.33;
+      }
+      #carsDetails > section:nth-child(1) > h5 {
+        font-size: 30px;
+      }
+
+      #carsDetails > section:nth-child(1) > p {
+        color: #5e5b5b;
+        font-size: 18px;
+      }
+      #carsDetails > section:nth-child(2) {
+        margin-right: 60px;
+      }
+      #carsDetails > section + section {
+        display: flex;
+        justify-content: center;
+      }
+      #carsDetails > section + section > section {
+        width: 15vw;
+        margin-left: 20px;
+      }
+      #carsDetails > section + section > section > img {
+        width: 100%;
+      }
+      #carsDetails > section + section > section > p,
+      #carsDetails > section + section > section > address {
+        text-align: left;
+        line-height: 20px;
+        color: #5e5b5b;
+      }
+      @media all and (min-width:491px) and  (max-width: 1088px) {
+        #carsDetails {
+          grid-template-columns: 100px auto;
+        gap: 7vw;
+        }
+        #carsDetails > section:nth-child(1) {
+        width: 17vw;
+      }
+        #carsDetails > section:nth-child(1) > h5 {
+        font-size: 20px;
+      }
+      #carsDetails > section + section {
+        width: 1400px;
+      }
+      #carsDetails > section + section > section {
+        width: 50vw;
+        margin-left: 20px;
+      }
+      }
+      @media all and  (max-width: 490px) {
+        #carsDetails {
+          grid-template-columns: 100px auto;
+        gap: 2vw;
+        }
+        #carsDetails > section:nth-child(1) {
+        width: 35vw;
+        margin-right: 20px;
+        font-weight: 600;
+        line-height: 1.33;
+      }
+        #carsDetails > section:nth-child(1) > h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      #carsDetails > section + section {
+        width: auto;
+      }
+      #carsDetails > section + section > section {
+        width: 50vw;
+        margin-left: 20px;
+      }
+      }
+      #FAQs {
+        display: grid;
+        grid-template-columns: 18vw auto;
+        gap: 50px;
+        margin-top: 8vw;
+        
+      }
+      /* #FAQs > #quesleft + div > section {
+        /* margin-bottom: 20px; */
+      /* }  */
+      #quesleft{  width: 15vw;      }
+      #quesleft>h2, #HelpSection>div>h1{
+        font-size: 3vw; line-height: 1.29;
+      }
+      #quesleft+div>section>div{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;}
+        hr{
+          margin: 20px;
+        }
+    
+
+        #quesleft+div>section >div>h2{color: #000000d1; font-family: 'Times New Roman', Times, serif;font-weight: lighter;font-size: 18px;}
+  .paragraph{
+    line-height: 27px; font-size: 15px; color: #666;
+  }
+
+  #HelpSection {
+    display: grid;
+    grid-template-columns: 18vw auto;
+    gap: 50px;
+    margin-top: 100px;
+  }
+  #HelpSection>div+div{display: flex;justify-content: space-between;border: 1px solid rgba(128, 128, 128, 0.299);
+  padding: 20px 20px;
+  border-radius: 10px;
+  }
+  #HelpSection>div+ div>div{display: flex;flex-direction: column;
+  justify-content: space-between;}
+  #HelpSection>div+ div>div>.faqButton{display: flex; justify-content: space-between;background-color:rgba(255, 255, 255, 0);}
+  #HelpSection>div+ div>div>.faqButton>button{background-color:rgba(255, 255, 255, 0);color: #10a310; font-weight:bolder; border: none;}
+  
+
+  @media all and (min-width:491px) and  (max-width: 803px) {
+    #HelpSection {
+    display: grid;
+    grid-template-columns: 13vw auto;
+    gap: 50px;
+  }
+  #HelpSection>div>h1,#quesleft>h2{
+    font-size: 4vw;
+    
+  }
+  #HelpSection >div>img{width: 15vw;}
+     #HelpSection>div+ div>div>.faqButton>button{
+      margin-top: 20px;
+     }
+   
+      }
+      @media all and  (max-width: 490px) {
+        #HelpSection>div>h1,#quesleft>h2{
+    font-size: 6vw;
+    
+  }
+     #HelpSection >div>img{display: none;}
+     #HelpSection>div+ div>div>.faqButton>button{
+      margin-top: 20px;
+     }
+
+      }
+
+
+  /* footer************************** */
+  #footer{
+    margin-top: 60px;
+
+    width: 100%;
+    background-color: rgba(202, 202, 202, 0.189);
+  }
+  #footer>img{
+    padding: 5vw 2vw;
+  }
+
+
+
+/* c=alculator**************************************************************** */
+ #block{
+  display: none;
+ }
+
+
+    </style>
+  </head>
+  <body>
+   
+    <article id="comp_rapid_growing">
+      <h5 class="rapid_growing">Growing rapidly</h5>
+      <p class="rapid_growing_p">
+        Join Host program and be part of the largest tech enabled car sharing
+        marketplace.
+      </p>
+      <div id="Exprience_data">
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/e3a6d127cac35a3a7a139256bb3761eb.png"
+            alt=""
+          />
+          <h5>25,000+</h5>
+          <p>Satisfied hosts</p>
+        </div>
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/4a5f55fc81b9a6df6a460a025fdfa509.png"
+            alt=""
+          />
+          <h5>50lack+</h5>
+          <p>Bookings served</p>
+        </div>
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/36da13bf403485c4efacd507efd93735.png"
+            alt=""
+          />
+          <h5>32Cr+</h5>
+          <p>KMs Run</p>
+        </div>
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/c0db9479a08980b830b63433f60d336c.png"
+            alt=""
+          />
+          <h5>₹300Cr+</h5>
+          <p>Earned by hosts</p>
+        </div>
+      </div>
+
+      <section id="calculatorBox">
+        <h4>
+          Share your <span class="amigo-home__text--dropdown">XUV 500 🢗</span>
+          <br />
+          and earn up to
+          <span class="home_text_calculation">₹ 49,980</span> per month
+        </h4>
+        <button class="home_btn_calculation">CALCULATE EARNING</button>
+        <br />
+        <a href="#info-modal" class="amigo-home__link--calculation">
+          How do we estimate your earning?
+        </a>
+      </section>
+
+<!-- ************************************************************************** -->
+
+<div id="block">
+  <div id="top_total">
+    <p>EARN UPTO</p>
+    <h1>₹ <strong id="price_WRT_time">0</strong>/mo</h1>
+  </div>
+  <div class="modal-body">
+    <select name="" id="brand_model">
+      <option >Select Your Model</option>
+      <option value="Datsun">Datsun</option>
+      <option value="Mahindra">Mahindra</option>
+      <option value="Maruti">Maruti</option>
+      <option value="Tata">Tata</option>
+      <option value="Ford">Ford</option>
+    </select>
+
+    <div id="model">
+      <select id="default_select">
+        <option>Select Model</option>
+        <option value="Redi-Go">Redi-Go</option>
+      </select>
+    </div>
+  </div>
+  <input    id="slider_price"   type="range"   ondragstart="priceslider()"   min="0"   max="31"  value="0"   step="1"  />
+</div>
+    
+
+
+      <!-- section price box............... -->
+      <section id="priceDetails">
+        <div class="flexdiv">
+          <div>
+            <h5>
+              You Earn ₹4,999/- <br />
+              Your Friend Gets upto ₹4,999/-
+            </h5>
+            <p>You Both Win</p>
+            <button>Refer and Earn</button>
+          </div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/b561826c55602da000820bda8422a23d.webp"
+            alt=""
+          />
+        </div>
+        <p>
+          This opportunity is for your friends in Bangalore, Pune, Delhi NCR,
+          Mumbai, Chennai, Hyderabad, Chandigarh, Kolkata, Ahmedabad,
+          Coimbatore, Indore, Jaipur, Mangalore, Mysore, Vizag, Goa, Nagpur,
+          Kochi, Vijayawada, Siliguri, Bhopal, Lucknow, Guwahati, Bhubaneswar,
+          Vadodara, Nashik, Trichy & Madurai only. <br />Refer multiple friends
+          to earn upto ₹ 1 Lakh.
+        </p>
+      </section>
+
+      <!--star section8888888888888  -->
+      <section id="rating">
+        <h5>
+          Users love Zoomcar Host program. Our app has 4.5+ rating on play
+          store!
+        </h5>
+        <video
+          muted
+          preload="auto"
+          loop="loop"
+          autoplay="auto"
+          src="https://www.zoomcar.com/zap/subscribe/build/993b9e144e89da0b2a0df580e13a2cbe.mp4"
+        ></video>
+      </section>
+
+      <section id="carsDetails">
+        <section>
+          <h5>What are the host users saying?</h5>
+          <p>10,000+ hosts are earning average of ₹ 50,000 per month</p>
+        </section>
+
+        <section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/3f72230754b1fb30e311c9f78848ee62.png"
+              alt=""
+            />
+            <p>
+              I always dreamt of owning a car in which I can take my family for
+              a drive, But, due to high EMIs, I couldn't afford a car. With host
+              program, I reduced my EMI by sharing the car on weekdays and take
+              my family out on weekends. I am happy that I could finally realise
+              my dream, thanks to host.
+            </p>
+            <address>
+              Gajendra Tomar, Age 38 <br />
+              Govt School Teacher, Pune
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/bd8cb705e0b100c897e16bbfff2a275f.png"
+              alt=""
+            />
+            <p>
+              I am an environmentally conscious person. I saw a wonderful
+              opportunity to do something for congested roads and the
+              environment with host program. Sharing my second car on host helps
+              me to reduce traffic and reduce my carbon footprint. And yes,
+              additional earning through my second car is cherry on the cake
+            </p>
+            <address>
+              Srikanth Venkatesh, Age 43
+              <br />
+              VP in an IT Company, Hyderabad
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/5c4df7d7677b23ee3d6c5e32e964303e.png"
+              alt=""
+            />
+            <p>
+              I bought a car recently. But, ended up using it only once or twice
+              a week for errands and grocery visits. I saw a great way to earn
+              additional money through the host program while also having the
+              car to myself on weekends for my grocery visits. It is a win-win
+              situation for me.
+            </p>
+            <address>
+              Archana Sundaram, Age 55
+              <br />
+              Housewife, Hyderabad
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/9f1be46d5b847adf8089338ebb6d89d8.png"
+              alt=""
+            />
+            <p>
+              I am a travel enthusiast and use my car to explore new places. I
+              prefer taking public transport to office, because of which my car
+              stays idle during the weekdays. So, I decided to share my car on
+              host. Now, I earn extra bucks for my travel expenses :)
+            </p>
+            <address>
+              Shishir Gupta, Age 28
+              <br />
+              Young urban professional, Pune
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/66c77e4621ef9ac32bdd9b5441ba7e71.png"
+              alt=""
+            />
+            <p>
+              My parents gave me a car so that I can commute safely to college.
+              Since I've been having online classes now, my car wasn't being
+              used much. I shared my car on host so that I could earn some extra
+              pocket money from it. It easy to share the car on host and earn
+              pocket money.
+            </p>
+            <address>
+              Prateek Singh, Age 22
+              <br />
+              College Student, Hyderabad
+            </address>
+          </section>
+        </section>
+      </section>
+   
+   
+
+    <section id="FAQs">
+      <div id="quesleft"> <h2>Still have questions?</h2></div>
+
+      <div>
+        <section>
+          <div onclick="showFAQ_content(1)">
+            <h2>Do I need to meet the renters of my car?</h2>
+            <img   class="downarrow downarrow1"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+           </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph1">
+              We have installed the keyless entry devices in your car, which makes
+              sure that you need not meet any of the renters in person, either at
+              the start, or at the end of any booking.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div onclick="showFAQ_content(2)">
+            <h2>How will I get Paid?</h2>
+            <img   class="downarrow downarrow2"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+          <!-- <img   class="upperarrow" src="https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg"   alt=""  -->
+          </div> 
+          <div>
+            <p style="display: none" class="paragraph paragraph2">
+              Your total earnings will be credited to your bank account every week. You can access your detailed earnings through our Zoomcar Host app.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div onclick="showFAQ_content(3)">
+            <h2>What happens if my car gets challans or traffic fines while my car is being shared?</h2>
+            <img   class="downarrow downarrow3"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+            <!-- <img   class="upperarrow" src="https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg"   alt=""  /> -->
+          </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph3">Zoomcar will take care of all challans incurred during car sharing.
+            </p>
+          </div>
+        </section>
+        <hr />
+      
+        <section>
+          <div onclick="showFAQ_content(4)">
+            <h2>How much will I earn?</h2>
+            <img   class="downarrow downarrow4"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+            <!-- <img   class="upperarrow" src="https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg"   alt=""  /> -->
+          </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph4">You will earn 60% of the booking revenue that your car earns on every booking. Your earnings will be paid to you on a weekly basis. 
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div onclick="showFAQ_content(5)">
+            <h2>How is the price of my car decided?</h2>
+            <img   class="downarrow downarrow5"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+           
+          </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph5">Our intelligent demand based pricing system optimizes the price of your car. We also send you suggestion for peak seasons to share your car. We ensure you get maximum earning while sharing the car.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+        <div onclick="showFAQ_content(6)">
+          <h2>Why are safety devices installed?</h2>
+          <img   class="downarrow downarrow6"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+          
+        </div>
+        <div>
+          <p style="display: none" class="paragraph paragraph6">
+            These are Zoomcar's proprietary tech devices. They are installed in the car to keep track of car health and location of your car. It keeps your car safe when shared with Guests.
+          </p>
+        </div>
+      </section>
+      </div>
+    </section>
+  
+
+     <!-- help section*************************** -->
+     <section id="HelpSection">  
+      <div ><h1>Still confused?</h1> </div>
+      <div>
+        <div>
+            <div><h1>We are here to help</h1>
+             <p>Visit detailed FAQs section or contact us for more details.</p>
+            </div>
+          <div class="faqButton">
+            <button >FAQs</button> <button>CONTECT US </button>
+          </div>
+      </div>
+
+          <img src="https://www.zoomcar.com/zap/subscribe/build/1481c0a139f0327896e2b071d9e392bd.svg" alt="">
+      </div>
+     </section>
+
+
+<!-- footer section*************** -->
+<div id="footer">
+  <img src="https://www.zoomcar.com/zap/subscribe/build/5335b9a2cd132fc5c25ea3fec1177b02.svg" alt="">
+</div>
+
+  </article>
+  
+  </body>
+</html>
+<script>
+  function showFAQ_content(value){
+    if( document.querySelector(`.paragraph${value}`).style.display=="block"){
+      document.querySelector(`.paragraph${value}`).style.display="none"
+      document.querySelector(`.downarrow${value}`).setAttribute("src","https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg")
+    }
+    else{
+    document.querySelector(`.downarrow${value}`).setAttribute("src","https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg")
+   document.querySelector(`.paragraph${value}`).style.display="block"
+ 
+  }
+  }
+
+
+let cal_but=document.querySelector(".home_btn_calculation")
+cal_but.addEventListener("click", function(e) {
+  let calculator = document.getElementById("block")
+  if(calculator.style.display == "block"){
+
+    calculator.style.display = "none";
+  }else{
+    calculator.style.display = "block";
+  }
+})
+
+
+
+</script>
+<script type="module">
+  import { Datsun, Mahindra, Ford, Maruti, Tata } from "./component/model.js";
+ 
+  let  data_obj = [
+    // Mahindra
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/3ef1a06dd41a0079ff3e36294677c42b7f24983d.png?1584526260",
+      brand: "Mahindra",
+      model: "XUV500",
+      price: "1666",
+      id: "MAH1",
+      seats: "7",
+      transmission: "Manual",
+      fuel: "Diesel",
+      rating: "5.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/59fca001231ef0e5665ea4e6e6b2eb2dd3d920dd.png?1584525284",
+      brand: "Mahindra",
+      model: "TUV300",
+      price: "1333",
+      id: "MAH2",
+      seats: "7",
+      transmission: "Manual",
+      fuel: "Diesel",
+      rating: "3.1",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/063143885574b4ba5a1ae9a8b99f27cdeafeb170.JPG?1640076680",
+      brand: "Mahindra",
+      model: "Marazzo",
+      price: "1333",
+      id: "MAH3",
+      seats: "8",
+      transmission: "Manual",
+      fuel: "Diesel",
+      rating: "5.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/063143885574b4ba5a1ae9a8b99f27cdeafeb170.JPG?1640076680",
+      brand: "Mahindra",
+      model: "KUV 100",
+      price: "1166",
+      id: "MAH4",
+      seats: "7",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "4.9",
+    },
+    // Mahindra
+
+    // Tata
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/55cf48c3aca88c14b839a360411dfe0dcc761c5a.jpg?1618911344",
+      brand: "TATA",
+      model: "Tigor",
+      price: "1166",
+      id: "TATA1",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "5.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/d44ae1d555cfe2dd4b499c3e75f2fcda0504a6de.JPG?1654862797",
+      brand: "TATA",
+      model: "Nexon",
+      price: "1333",
+      id: "TATA2",
+      seats: "7",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "4.8",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/19eca74a7982804ba713dd9485861a7543422115.JPG?1638531037",
+      brand: "TATA",
+      model: "Tiago",
+      price: "1166",
+      id: "TATA3",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "5.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/95f6a817637e5bbc26dfbcb5a1a00808cfdcdeb6.png?1584525151",
+      brand: "TATA",
+      model: "Hexa",
+      price: "1666",
+      id: "TATA4",
+      seats: "7",
+      transmission: "Manual",
+      fuel: "Diesel",
+      rating: "3.2",
+    },
+    // TATA
+
+    // Maruti
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/d748d92c90c3b84a32f4115da1e5bd3f3f352937.jpg?1615958311",
+      brand: "Maruti",
+      model: "Baleno",
+      price: "1166",
+      id: "MARU1",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "3.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/4f978e418417cef5f069be1c013ee75b34c294ce.png?1613648724",
+      brand: "Maruti",
+      model: "Swift",
+      price: "1166",
+      id: "MARU2",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "5.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/524fda673d85d7affc94f9c54ddb2ed1219d3a4d.JPG?1638612892",
+      brand: "Maruti",
+      model: "Dzire(Petrol)",
+      price: "1333",
+      id: "MARU3",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "5.0",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/67ff26f4a0d5658901058b411ef69896b763d646.jpg?1640674355",
+      brand: "Maruti",
+      model: "Celerio",
+      price: "1166",
+      id: "MARU4",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "5.0",
+    },
+    // Maruti
+
+    //datsun
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/741d5e6e6b4a35cc2623eaf23e251357903995a1.jpg?1628513745",
+      brand: "Datsun",
+      model: "Redi-GO",
+      price: "1166",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "4.5",
+      id: "DATS1",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/4e89a97a585c0f0145a7fbb9fbc8d83bf89c13a4.JPG?1628520075",
+      brand: "Ford",
+      model: "Aspire",
+      price: "1166",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "4.5",
+      id: "FORD1",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/e47541c407f8ee906e9fa81c43c732ada5614617.png?1584526352",
+      brand: "Ford",
+      model: "Ecosport",
+      price: "1333",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Diesel",
+      rating: "2.9",
+      id: "FORD2",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/3bf7649c2df0514040ce86c781467daf2082f3b7.JPG?1625921612",
+      brand: "Ford",
+      model: "Figo",
+      price: "1166",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Petrol",
+      rating: "4.5",
+      id: "FORD3",
+    },
+    {
+      url: "https://zoomcar-assets.zoomcar.com/photographs/original/9a1223f6808fd914fec05710f2a96f1c83fbb307.png?1584524611",
+      brand: "Ford",
+      model: "Freestyle",
+      price: "1166",
+      seats: "5",
+      transmission: "Manual",
+      fuel: "Diesel",
+      rating: "4.5",
+      id: "FORD4",
+    },
+  ];
+ 
+//   model_car = localStorage.getItem("model_car");
+let slider = document.getElementById("slider_price");
+  let value = document.getElementById("price_WRT_time");
+
+  let brand_type = document.getElementById("brand_model");
+  let div_model = document.getElementById("model");
+
+  brand_type.onchange = () => {   //uuperwala select
+
+
+    if (brand_type.value == "Datsun") {
+
+      div_model.innerHTML = Datsun();  //inport fetch data
+
+      document.getElementById("Datsun").onchange = () => {  //niche wala select
+
+        // console.log(document.getElementById("Datsun").value);
+
+        data_obj.forEach(ele => {
+           if(ele.model == document.getElementById("Datsun").value){
+    // console.log(ele.price);
+
+  
+  value.textContent = slider.value;
+  slider.oninput = function () {
+    value.textContent = this.value*ele.price;
+  };
+
+};
+});
+
+
+      };
+    } else if (brand_type.value == "Mahindra") {
+      div_model.innerHTML = Mahindra();
+      document.getElementById("Mahindra").onchange = () => {
+        localStorage.setItem("model_car", document.getElementById("Mahindra").value );
+        data_obj.forEach(ele => {
+           if(ele.model == document.getElementById("Mahindra").value){
+    console.log(ele.price);
+    value.textContent = slider.value;
+  slider.oninput = function () {
+    value.textContent = this.value*ele.price;
+  }; }
+           });
+      };
+    } else if (brand_type.value == "Tata") {
+      div_model.innerHTML = Tata();
+      document.getElementById("Tata").onchange = () => {
+        localStorage.setItem("model_car", document.getElementById("Tata").value);
+        data_obj.forEach(ele => {
+        if(ele.model == document.getElementById("Tata").value){
+    console.log(ele.price);
+    value.textContent = slider.value;
+  slider.oninput = function () {
+    value.textContent = this.value*ele.price;
+  };}
+        });
+      };
+    } else if (brand_type.value == "Maruti") {
+      div_model.innerHTML = Maruti();
+      document.getElementById("Maruti").onchange = () => {
+        localStorage.setItem( "model_car", document.getElementById("Maruti").value);
+        data_obj.forEach(ele => {
+        if(ele.model == document.getElementById("Maruti").value){
+    console.log(ele.price);
+    value.textContent = slider.value;
+  slider.oninput = function () {
+    value.textContent = this.value*ele.price;
+  };
+        }
+        });
+
+      };
+    } else if (brand_type.value == "Ford") {
+      div_model.innerHTML = Ford();
+      document.getElementById("Ford").onchange = () => {
+        localStorage.setItem("model_car",document.getElementById("Ford").value);
+        data_obj.forEach(ele => {
+        if(ele.model == document.getElementById("Ford").value){
+    console.log(ele.price);}
+    value.textContent = slider.value;
+  slider.oninput = function () {
+    value.textContent = this.value*ele.price;
+  };
+        });
+      };
+    }
+ 
+  };
+  </script>
