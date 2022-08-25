@@ -1,7 +1,7 @@
 #container1{
     height: 600px;
     width:100%;
-    border: 1px solid yellow;
+   /* border: 1px solid yellow;*/
    
 }
 #container1>img{
@@ -104,7 +104,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #container21>#button1{
-  background-color: green;
+  background-color:green;
   width: 45%;
   cursor: pointer;
   border: 0px;
@@ -144,7 +144,7 @@ padding-top: 5%;
 }
 
 #container23{
-border: 1px solid green;
+border: 1px solid white;
 
 width: 80%;
 height: 300px;
@@ -219,28 +219,38 @@ margin-top: -43%;
   height: 200px;
   width: 100%;
 
-  margin-left: 80%;
+  margin-left: 90%;
   margin-top: 40%;
   padding-top: 10%;
 }
 #container24>div>h4+p{
   font-family: sans-serif;
   font-size: 15px;
-  width: 100%;
+  width: 80%;
+  margin-left: 1%;
  
 }
-
+#container24>button>a{
+    color: white;
+    text-decoration: none;
+}
 #container24>button{
   width: 70%;
   height: 45px;
   margin-top: 100%;
-  margin-left: -135%;
+  margin-left: -130%;
   background-color: green;
   color: white;
   font-size: 18px;
   border: 0px;
   border-radius: 5px;
   cursor: pointer;
+}
+#container25{
+  margin-top: -50%;
+}
+#feature{
+  color: gray;
 }
 #container26{
   height: 100px;
@@ -286,12 +296,21 @@ margin-top: -43%;
 }
 #container4>div>img{
   width: 13%;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
  
 }
-#container4>div>img+h4,p{
+#container4>div>img+h4{
   font-size: 13px;
   word-spacing: normal;
+  
+  
+}
+#container4>div>img+h4+p{
+  color: black;
+  width: 100%;
+  margin-left: 1%;
+  font-family: sans-serif;
+  font-size: 15px;
 }
 
 #container6{
@@ -344,17 +363,48 @@ margin-top: -43%;
 }
 #container9>div{
       text-align: center;
-      margin-top: 20%;
+      margin-top: 15%;
 }
-form {
-      
-      margin-left: 38%;
-      
+#container9>div+h1,p{
+  width: 30%;
+  margin-left: 35%;
 }
+
 input{
-  width: 25%;
+  width: 20%;
   border-radius: 5px;
   height: 40px;
   border: 1px solid gray;
+  margin-left: 27%;
+  padding-left: 10px;
+ 
+}
+input:hover{
+  border: 3px solid green;
+  
 }
 
+#name{
+  margin-bottom: 3%;
+}
+#companyname{
+  margin-left: 3%;
+}
+#email{
+  margin-bottom: 3%;
+  width: 43%;
+}
+#phonenumber{
+  margin-bottom: 3%;
+}
+#country{
+  margin-left: 3%;
+}
+#Mentionrequirement{
+  width: 43%;
+  height: 120px;
+}
+#submit{
+  margin-left: 40%;
+  margin-top: 3%;
+}
