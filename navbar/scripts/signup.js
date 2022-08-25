@@ -7,7 +7,8 @@ let obj={
     mobile:document.getElementById('ip1').value,
     email:document.getElementById('email').value,
     city:document.getElementById('selectcity').value,
-    pass:document.getElementById('pass').value
+    pass:document.getElementById('pass').value,
+    gender:document.getElementById('gender').value
 }
 
 let {name,mobile,email,city,pass}=obj
