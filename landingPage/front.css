@@ -3,7 +3,7 @@
     background-image:url(https://www.zoomcar.com/img/banner_roundtrip.png);
     background-size: 100% 600px;
     background-repeat: no-repeat;
-    height:500px;
+    height:600px;
     width:100%;
     border:1px solid wheat
 }
@@ -108,7 +108,7 @@ grid-template-columns: repeat(2, 1fr);
 width:80%;
 margin:auto
 }
-#promo-div>div>img{
+#promo-div>a>div>img{
 width:100%;
 height:100%;
 }

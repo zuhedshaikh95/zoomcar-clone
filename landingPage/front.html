@@ -15,13 +15,13 @@
 
               <form>
                 <div id="ride-selection">
-                    <div id="road">
+                    <div id="road" onclick="changeToRoad()">
                        <div id="div-content">
                         <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmd0o37WqMvSONzvAKMis6yj2O2jAUvXeF5w&usqp=CAU"></div>
                         <div style="font-stretch:ultra-expanded">Round Trip</div>
                        </div>
                     </div>
-                    <div id="air">
+                    <div id="air" onclick="changeToAir()">
                         <div id="div-content">
                             <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBaog8E36pK6W53G2-wTlR6KxsGibNyZd4g&usqp=CAU"></div>
                             <div style="font-stretch:ultra-expanded">Airport</div>
@@ -31,13 +31,14 @@
                 <div id="city-selection">
                     <div>
                         <div id="circle"></div>
-                        <select style="font-family:Arial, Helvetica, sans-serif">
-                            <option>Pick Up City, Airport, Address or Hotel</option>
+                        <select>
+                            <option id="show-airport">Pick Up City, Airport, Address or Hotel</option>
                             <option>Pune</option>
                             <option>Hyderabad</option>
                             <option>Delhi NCR</option>
                             <option>Mumbai</option>
                             <option>Chennai</option>
+                            <option>Air Port</option>
                         </select>
                     </div>
                 </div>
@@ -81,18 +82,26 @@
 
 <div id="promo">
  <div id="promo-div">
+    <a href="front.html">
     <div>
         <img src="https://zoomcar-assets.zoomcar.com/pictures/original/d70e7f58da384df0f3ba169cf19e8e931879c66c.jpeg?1652354515">
     </div>
+    </a>
+    <a href="front.html">
     <div>
         <img src="https://zoomcar-assets.zoomcar.com/pictures/original/55c3970a33c8f4d10dd3c9ace39d20e32af5c8ba.jpg?1651758755">
     </div>
+   </a>
+   <a href="front.html">
     <div>
         <img src="https://zoomcar-assets.zoomcar.com/pictures/original/bf00a1ae4448e84bbd2ef285970c2cc8527dc305.jpg?1660131373">
     </div>
+   </a>
+   <a href="front.html">
     <div>
         <img src="https://zoomcar-assets.zoomcar.com/pictures/original/e3dfe0ed91abc29facaf56a327b4498ce4e9b75e.jpeg?1652363808">
     </div>
+   </a>
 </div>
 </div>
 <div id="book"><button>Book Now</button></div>
@@ -192,4 +201,7 @@
 </div>
   <div id="copyright">© Copyright 2022 Zoomcar India Private Ltd. All rights reserved </div>
 </body>
+<script
+     src="front.js">
+</script>
 </html>
