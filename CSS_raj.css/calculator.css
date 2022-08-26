@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
   }
-  /* #container {
-    background-color: rgba(240, 255, 255, 0.073);
-    width: 100vw;
-    height: 100vh;
-  } */
    #block {
     margin: auto;
     display: flex;
@@ -20,14 +15,9 @@
   }
 
   @media all and (min-width: 768px) and (max-width: 1441px) {
-    #container > #block {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      width: 30%;
+   #block {
       padding: 10px 10px;
       padding-bottom: 40px;
-      border: 1px solid rgb(72, 2, 2);
     }
   }
 
