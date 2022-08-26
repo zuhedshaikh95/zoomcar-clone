@@ -1,4 +1,4 @@
-let data1=JSON.parse(localStorage.getItem('UserData')) || []
+let data1=JSON.parse(localStorage.getItem('userData')) || []
 let num=localStorage.getItem('mobile')
 document.getElementById('ip1').value=num
 let rgister= ()=>{    

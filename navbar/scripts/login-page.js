@@ -1,4 +1,5 @@
-let data = JSON.parse(localStorage.getItem("userData")) || null;
+let data = JSON.parse(localStorage.getItem("userData"));
+
 
 // for button color change
 let validate = () => {
@@ -23,23 +24,23 @@ let validate = () => {
 let num;
 let verify = () => {
   num = document.getElementById("ip").value;
-  console.log(num);
-  if (data == null) {
-    alert("You are not registered");
-    window.location.href = "signup.html";
-  } else {
-    let flag = true;
+  // console.log(num);
+  if (data != null) {    
+    let flag=false;
     data.forEach((el) => {
       if (el.mobile == num) {
         localStorage.setItem("user", JSON.stringify(el));
         window.location.href = "otp.html";
-      } else {
-        flag = false;
+         flag=true        
       }
     });
     if (flag == false) {
       alert("You are not registered");
       window.location.href = "signup.html";
     }
+  } else {
+    alert("You are not registered");
+    window.location.href = "signup.html";
   }
 };
+

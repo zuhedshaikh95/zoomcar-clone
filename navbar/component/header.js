@@ -162,6 +162,8 @@ function beforeLogin() {
       tabindex="-1"
       id="offcanvasWithBothOptions"
       aria-labelledby="offcanvasWithBothOptionsLabel"
+      id="offcanvasResponsive
+      class="offcanvas-sm"
     >
       <div id="logData1"> 
         <i class="fa-solid fa-user"></i>         
