@@ -152,7 +152,7 @@ nav {
   background-color: white;
 }
 #profileCont {
-  width: 1400px;
+  width: 88%;
   /* height: 700px; */
   margin: auto;
   /* border: 1px solid red; */
@@ -298,4 +298,84 @@ nav {
 }
 #pd hr{
  border: 1px solid black;
+}
+
+@media all and (min-width: 781px) and (max-width: 1410px){
+  #profileCont{
+    margin: auto;
+    grid-template-columns: repeat(1,100%);
+    gap: 1% 0%;
+  }  
+  #profileCont *{
+    font-size: 13px;
+  }
+  #c2 *{
+    font-size: 13px;
+  }
+  #c2 input{
+    width: 80%;
+    height: 25px;
+    padding-left: 5px;
+  }
+  #c2 select{
+    width: 90%;
+    height: 25px;
+    padding-left: 5px;
+  }
+  .grid2{
+    width: 80%;
+  }
+  .grid3{
+    width: 80%;
+  }
+  .grid1{
+    width: 80%;
+  }
+  #flx1{
+    width: 80%;
+  }
+  #c1 > hr{
+    width: 97%;
+  }
+  #update{
+    width: 125px;
+    height: 30px;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 780px){
+  #profileCont{
+    margin: auto;
+    grid-template-columns: repeat(1,100%);
+    gap: 1% 0%;    
+  }
+  #profileCont *{
+    font-size: 10px;
+  }
+  #c2 *{
+    font-size: 10px;
+  }
+  #c2 input{
+    width: 80%;
+    height: 20px;
+  }
+  #c2 select{
+    width: 60%;
+    height: 20px;
+  }
+  .grid2{
+    width: 100%;
+  }
+  .grid3{
+    width: 100%;
+  }
+  .grid1{
+    width: 100%;
+  }
+  #flx1{
+    flex-direction: column;
+  }
+  #update{
+    width: 100px;
+    height: 25px;
+  }
 }

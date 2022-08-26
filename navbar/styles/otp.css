@@ -51,7 +51,7 @@
   animation-name: fadeInUpBig;
 }
 #logProc {
-  width: 32%;
+  width: 500px;
   height: auto;
   margin: auto;
   display: flex;
@@ -101,4 +101,21 @@ p {
 }
 #logProc > p:nth-child(6) {
   color: green;
+}
+
+@media all and (min-width: 280px) and (max-width: 520px){
+  #logProc{
+width: 90%;
+font-size: 14px;
+  }
+  #logProc > input{
+    font-size: 14px;
+    height: 40px;
+  }
+  #btn2{
+    width: 40%;
+    margin: auto;
+    margin-top: 300px;
+    height: 30px;    
+  }
 }

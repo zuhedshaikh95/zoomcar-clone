@@ -51,7 +51,7 @@
   animation-name: fadeInUpBig;
 }
 #logProc {
-  width: 32%;
+  width: 500px;
   height: 600px;
   margin: auto;
   display: flex;
@@ -105,4 +105,30 @@
 }
 h3 {
   margin-top: 20px;
+}
+
+@media all and (min-width: 280px) and (max-width: 520px){
+  #logProc{
+    width: 90%;    
+  }
+  #cont > img {
+    height: 10px;
+    width: 10px;
+  }
+  #cont > p {
+    font-size: 14px;
+  }
+  #contnum > input{
+    font-size: 14px;
+  }
+  #cont{
+    height: 40px;
+    gap: 5px;
+  }
+  #btn{
+    width: 40%;
+    margin: auto;
+    margin-top: 300px;
+    height: 30px;    
+  }
 }

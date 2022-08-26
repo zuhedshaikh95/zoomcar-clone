@@ -5,7 +5,7 @@
 font-family: 'Open Sans', sans-serif;
 }
 #container{
-  width: 30%;
+  width: 400px;
   margin: auto;
 }
 #container > div {
@@ -62,4 +62,37 @@ width: 200px;
 #container>hr{
   width: 100%;
   margin: auto; 
+}
+
+@media all and (min-width: 280px) and (max-width: 780px){
+  #container{
+    width: 100%;
+  }
+  h3{
+    font-size: 12px;
+  }
+  p{
+    font-size: 10px;
+  }
+  #selectcountry>img{
+    width: 10px;
+    height: 10px;
+  }
+  #selectcountry>img>p{
+    font-size: 10px;
+  }
+  #logDetails>input{
+    width: 100px;
+     border: none;
+     outline: none;
+     font-size: 10px;
+    }
+    #container > div:nth-child(4) {
+      display: flex;
+      gap: 5px;
+      color: #666666;
+    }
+    #selectcountry{
+      width: 15%;
+    }
 }
