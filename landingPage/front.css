@@ -181,3 +181,23 @@ max-width: 229px;
 #copyright{
 text-align:center;
 }
+
+  /* map appending */
+
+  .mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+#mother,#weekly{
+    display:flex;
+    margin-left:50px;
+    margin-top:30px
+}

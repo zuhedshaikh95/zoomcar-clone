@@ -30,6 +30,15 @@ function changeToAir(){
    showAirport.textContent='Pick Up City, Airport, Address or Hotel';
   }
 
-  function changePara(){
-
-  }
+  function display(city){
+    //appending map changing its source
+    let map=document.querySelector("#gmap_canvas")
+       map.src= `https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+     
+ }
+ let select=document.querySelector("#select")
+ select.addEventListener("change", function() {
+     let city=this.value;
+ 
+     display(city)
+ });
