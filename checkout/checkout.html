@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <nav id="cNav">
+      <i class="fa-solid fa-arrow-left-long"></i>
+      <div id="vDet">
+        <p id="vName1">Triber MT Petrol</p>
+        <p>
+          <span id="start">Sat, 27 Aug, 08:30 AM </span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+          <span id="end">Sun, 28 Aug, 04:30 PM </span>
+        </p>
+      </div>
+    </nav>
+    <div id="summary">
+      <div id="sHead">
+        <div id="dets">
+          <p id="vName2">Triber MT Petrol</p>
+          <div id="tAndf">
+            <div>
+              <img
+                src="https://zoomcar-assets.zoomcar.com/images/original/2aceee9e84a7bf79ae8928ace92944abbac907d4.png?1584455088"
+                alt="error"
+              />
+              <p id="tpe">Manual</p>
+            </div>
+            <div>
+              <img
+                src="https://zoomcar-assets.zoomcar.com/images/original/4c611ba1fb54d1e42553020d9022e5ab2dac14ea.png?1584455110"
+                alt="error"
+              />
+              <p id="fuel">Petrol</p>
+            </div>
+          </div>
+        </div>
+        <div id="vImg">
+          <img
+            id="carImg"
+            src="https://zoomcar-assets.zoomcar.com/photographs/original/c5d25b436da0aeb9ca1c25c86d8e85a1e9115aaf.JPG?1623135458"
+            alt="error"
+          />
+        </div>
+      </div>
+
+      <div class="sCont1">
+        <div class="b1">
+          <img
+            src="https://img.icons8.com/emoji/2x/green-circle-emoji.png"
+            alt="error"
+          />
+          <div>
+            <p id="start1">Sat, 27 Aug, 08:30 AM</p>
+            <p id="pickLocation">
+              International Airport ,Next to Hyatt Regency,Mumbai
+            </p>
+          </div>
+        </div>
+        <div class="b1">
+          <img
+            src="https://img.icons8.com/emoji/2x/red-square-emoji.png"
+            alt="error"
+          />
+          <div>
+            <p id="end1">Sat, 27 Aug, 08:30 AM</p>
+            <p id="dropLocation">
+              International Airport ,Next to Hyatt Regency,Mumbai
+            </p>
+          </div>
+        </div>
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/ccedfb3dddda918d76ad27240ffa582f4a59a157.png?1584454852"
+            alt="error"
+          />
+          <div>
+            <p>Unlimited Kms without Fuel</p>
+          </div>
+        </div>
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533"
+            alt="error"
+          />
+          <div>
+            <p>4.6 (53)</p>
+          </div>
+        </div>
+        <div id="b3">
+          <p>
+            Clean and sanitized car will be delivered at the selected Airport
+            Terminal
+          </p>
+        </div>
+      </div>
+      <div class="sCont1">
+        <p>Other Charges</p>
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/8b49713465c5c33330880cfe739ef06348b2c0f0.png?1659443762"
+            alt=""
+          />
+          <div>
+            <p>Convenience Fee ₹99</p>
+          </div>
+        </div>
+      </div>
+      <div class="sCont1">
+        <p>Damage Protection Package</p>
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/f6b01d4ca15bc999a8a0bbe2bb64710cf71f9b75.png?1633967237"
+            alt="error"
+          />
+          <div>
+            <p>Standard (₹276)</p>
+            <p>You pay up to INR 3499 in case of any damage</p>
+            <p>RECOMMENDED FOR YOU</p>
+          </div>
+          <input
+            type="radio"
+            name="sle"
+            id="check1"
+            checked
+            onclick="stdAmt()"
+          />
+        </div>
+
+        <div class="b2">
+          <img
+          src=https://zoomcar-assets.zoomcar.com/images/original/97e7b92d185271d80fa2e7638a3eead238f9a0ed.png?1633967297
+          alt="error">
+          <div>
+            <p>Peace of Mind (₹551)</p>
+            <p>You pay up to INR 249 in case of any damage</p>
+          </div>
+          <input type="radio" name="sle" id="check2" onclick="peaceOfMind()" />
+        </div>
+        <div id="b4">
+          <p>How Damage Protection Works?</p>
+          <p>
+            Incase of accidents or any damage to the car, Zoomcar will take care
+            of the expenses. You pay the minimum amount as per the package and
+            we take care of the rest. Higher the package you select, lower the
+            risk at your end for any damage. Please note that this is applicable
+            solely in the case of damage to the vehicle and does not cover for
+            any other third party loss.
+          </p>
+        </div>
+      </div>
+      <div class="sCont1">
+        <p>Keep In Mind</p>
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/0ebf53a526da3baa9621436223d17ee0a712495e.png?1584454768"
+            alt="error"
+          />
+          <div>
+            <p>Driving License Mandatory</p>
+          </div>
+        </div>
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/ccedfb3dddda918d76ad27240ffa582f4a59a157.png?1584454852"
+            alt="error"
+          />
+          <div>
+            <p>Fare & Fuel Policy</p>
+            <p>
+              Fare is inclusive of all taxes. Kindly return the car at the same
+              fuel level as the trip start time
+            </p>
+            <p><u>See Details</u></p>
+          </div>
+        </div>
+
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/afb10552c79c652619a45d814ab9f936f8592037.png?1584454817"
+            alt="error"
+          />
+          <div>
+            <p>Cancellation Policy</p>
+            <p>Hassle free cancellations and refunds at nominal charges</p>
+            <p><u>See Details</u></p>
+          </div>
+        </div>
+
+        <div class="b2">
+          <img
+            src="https://zoomcar-assets.zoomcar.com/images/original/9f2143a815aa6de62a72bcc66fa2739162e52fdc.png?1638375860"
+            alt="error"
+          />
+          <div>
+            <p>Agreement Policy</p>
+            <p>
+              I hereby agree to the terms and conditions of the Lease Agreement
+              with Host
+            </p>
+            <p><u>See Details</u></p>
+          </div>
+          <input type="checkbox" id="check3" onclick="checkout()" />
+        </div>
+      </div>
+    </div>
+
+    <footer id="foot">
+      <div id="footbox">
+        <p id="total">₹ 1000</p>
+        <button id="cs" onclick="processNxt()">CHECKOUT SUMMARY</button>
+      </div>
+    </footer>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/445205b9df.js"
+  crossorigin="anonymous"
+></script>
+<script src="checkout.js"></script>
