@@ -107,7 +107,7 @@
               Your Friend Gets upto ₹4,999/-
             </h5>
             <p>You Both Win</p>
-            <button>Refer and Earn</button>
+            <button onclick="openRefer()">Refer and Earn</button>
           </div>
           <img
             src="https://www.zoomcar.com/zap/subscribe/build/b561826c55602da000820bda8422a23d.webp"
@@ -124,6 +124,41 @@
         </p>
       </section>
 
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- refer section -->
+<!-- <div id="Refer_div"> -->
+
+  <div class="refer_popup" id="main_refer_popup">
+         <div class="refer_top">
+          <h2>Refer and Earn</h2>
+          <p>You Earn ₹4,999/-</p>
+          <p>Your Friend Gets upto ₹4,999/-</p>
+          <p>You Both Win</p>
+         </div>
+         <div class="refer_img">
+          <img src="https://www.zoomcar.com/zap/subscribe/build/2dac7c3e3ed475d15bf341d377b66ed9.svg" alt="">
+         </div>
+         <div class="refer_bottom">
+          <div>
+            <img src="https://www.zoomcar.com/zap/subscribe/build/57cc7c360d39278b0396db7f870e7cd0.png" alt="">
+            <p>Whatsapp</p>
+          </div>
+          <div>
+            <img src="https://www.zoomcar.com/zap/subscribe/build/511323b8e90983b78fe644c8c9075cf2.png" alt="">
+            <p>Facebook</p>
+          </div>
+          <div>
+            <img src="https://www.zoomcar.com/zap/subscribe/build/56993356b7e8876d8eadb92affa38ab7.png" alt="">
+            <p>Twitter</p>
+          </div>
+         </div>
+   </div>        
+ <!-- </div>    -->
+
+
+
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
       <!--star section8888888888888  -->
       <section id="rating">
         <h5>
@@ -388,6 +423,27 @@ cal_TEXT.addEventListener("click", function(e) {
     calculator.style.display = "block";
   }
 })
+
+
+
+
+function openRefer() {
+  if(document.getElementById("main_refer_popup").style.display == "block"){
+     
+    document.getElementById("main_refer_popup").style.display = "none";
+  }else{
+    document.getElementById("main_refer_popup").style.display = "block";
+    
+  }
+}
+
+// function closeForm() {
+//     document.getElementById("myForm").style.display = "none";
+// }
+
+
+
+
 
 </script>
 <script type="module" src="calculator.js"></script>
