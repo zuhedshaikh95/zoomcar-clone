@@ -94,7 +94,16 @@
   letter-spacing: 0.4px;
   color: #10a310;
 }
-
+#calculatorBox>button:hover{
+  background-color: #0d7d0d;
+  cursor: pointer;
+}
+.amigo-home__text:hover{
+  color: #0d7d0d;
+  cursor: pointer;
+  font-size: 4vw;
+  
+}
 
 @media all and (min-width: 403px) and (max-width: 803px) {
 /*  #calculatorBox > button {} */
@@ -381,6 +390,22 @@ padding: 5vw 2vw;
 
 /* c=alculator**************************************************************** */
 #block{
-display: none;
+display: block;
+z-index: 10;
+border-radius: 20px;
+ animation: calcu 2s 0s 1 ease-in-out;
+  }
+  @keyframes calcu{
+   from{
+      border-radius: 0px;
+      transform: translateX(-220px);
+      background-color: rgba(0, 0, 0, 0.203);
+    }
+    
+to{
+  border-radius: 20px;
+  transform: translateX(0px);
+  
+  
 }
-
+}

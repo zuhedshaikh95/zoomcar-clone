@@ -56,7 +56,7 @@
 
       <section id="calculatorBox">
         <h4>
-          Share your <span class="amigo-home__text--dropdown">XUV 500 🢗</span>
+          Share your <span class="amigo-home__text">XUV 500 🢗</span>
           <br />
           and earn up to
           <span class="home_text_calculation">₹ 49,980</span> per month
@@ -367,6 +367,7 @@
 
 
 let cal_but=document.querySelector(".home_btn_calculation")
+let cal_TEXT=document.querySelector(".amigo-home__text")
 cal_but.addEventListener("click", function(e) {
   let calculator = document.getElementById("block")
   if(calculator.style.display == "block"){
@@ -376,5 +377,16 @@ cal_but.addEventListener("click", function(e) {
     calculator.style.display = "block";
   }
 })
+
+cal_TEXT.addEventListener("click", function(e) {
+  let calculator = document.getElementById("block")
+  if(calculator.style.display == "block"){
+
+    calculator.style.display = "none";
+  }else{
+    calculator.style.display = "block";
+  }
+})
+
 </script>
 <script type="module" src="calculator.js"></script>

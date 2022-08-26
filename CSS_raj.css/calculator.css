@@ -17,7 +17,20 @@
   @media all and (min-width: 768px) and (max-width: 1441px) {
    #block {
       padding: 10px 10px;
-      padding-bottom: 40px;
+      width: 30vw;
+      height: 40vh;
+    }
+  }
+  @media all and (min-width:470px) and (max-width: 787px) {
+    #block {
+    width: 40vw;
+
+    }
+  }
+  @media all and (max-width: 669px) {
+    #block {
+    width: 75vw;
+
     }
   }
 
@@ -52,7 +65,7 @@
     background-color: rgb(7, 197, 57);
   }
 
-  @media all and (max-width: 1441px) {
+  @media all and (min-width: 768px) and (max-width: 1441px) {
     #top_total {
       padding: 20px 20px;
       margin-bottom: 10px;
@@ -75,6 +88,7 @@
       width: 90%;
       margin-left: 5%;
       margin-top: 2vh;
+      margin-bottom: -100px;
       -webkit-appearance: none;
       border-radius: 25px;
       outline: none;
@@ -82,4 +96,28 @@
       box-shadow: inset 0px 0px 4px rgba(49, 150, 76, 0.266);
       background-color: rgb(7, 197, 57);
     }
+  }
+
+
+  @media all and (max-width: 785x) {
+    #top_total {
+      padding: 10px 20px;
+      margin-bottom: 5px;
+    }
+   
+ 
+    #slider_price {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 4vh;
+      /* -webkit-appearance: none; */
+      border-radius: 25px;
+      outline: none;
+      /* height: 0.8vh; */
+      box-shadow: inset 0px 0px 4px rgba(49, 150, 76, 0.266);
+      background-color: rgb(4, 190, 54);
+        
+    }
+
+
   }
