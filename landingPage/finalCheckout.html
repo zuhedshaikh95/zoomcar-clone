@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
     <title>Document</title>
     <style>
          /* payment or checkOut page */
@@ -78,7 +79,7 @@
     <div id="payment">
         <h3 style="text-align:center;">Checkout Summary</h3><br/>
         <div>
-          <p>Trip Fare (Unlimited KMs without Fuel)</p><br/>
+          <p>Trip Fare (Unlimited KMs)</p><br/>
           <p id="tripFare">2234</p><br/>
         </div>
         <div>
@@ -86,22 +87,22 @@
           <p>200</p><br/>
         </div>
         <div>
-          <p>Convenience Fee                      </p><br/>
+          <p>Convenience Fee added                     </p><br/>
           <p>100</p><br/>
         </div>
         <div>
-          <p>Total Fare                             </p><br/>
+          <p>Total Fare(to be paid)                         </p><br/>
           <p id="total">2534</p><br/>
         </div>
         <div>
           <p>
             Refundable Deposit<br/>
-            (Has been waived off for this booking)<br/>
+        (waiv off for this booking)<br/>
           </p><br/>
           <p>0/-</p><br/><br/>
         </div>
         <div>
-          <p>Final Fare                            </p><br/>
+          <p>Final Fare(including tax)                           </p><br/>
           <h3 id="final">2534</h3><br/>
         </div><br/><br/>
         <button>PROCEED TO PAY</button><br/>
@@ -152,7 +153,7 @@ function ap(){
     tripFare.innerText=Cars[0].price;
 
     let name=document.getElementById('car-name');
-    name.innerText=Cars[0].brand+"               "+`(model: ${Cars[0].model})`;
+    name.innerText=Cars[0].brand+" "+`(model: ${Cars[0].model})`;
 
     let sum=+(Cars[0].price)+300
     let total=document.getElementById('total');
@@ -161,5 +162,7 @@ function ap(){
     let final=document.getElementById('final');
     final.innerText=sum;
  }
+
+
 </script>
 </html>
