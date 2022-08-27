@@ -115,6 +115,11 @@ font-size: 12px;
 
 }
 @media all and (max-width: 402px) {
+  #priceDetails{
+    width: 70vw;
+    position: relative;
+    right: 10%;
+  }
 #calculatorBox > button {
 padding: 1vw 2vw;
 font-size: 10px;
@@ -122,8 +127,8 @@ font-size: 10px;
 #calculatorBox > h4 {
 font-size: 5vw; 
 }
-}
 
+}
 /* below claculator black box */
 #priceDetails {
   background-image: linear-gradient(270deg, #444, rgb(0, 0, 0));
@@ -165,6 +170,10 @@ font-size: 5vw;
     grid-template-columns: 70% 10% ;
     
   } */
+  #priceDetails{
+width: 70vw;
+position: relative; right: 13%;
+  }
   .flexdiv > div > h5 {
   font-size: 17px;
 }
@@ -177,10 +186,19 @@ font-size: 5vw;
  text-align: left;
 
 }
+.flexdiv > img {
+  width: 40vw;position: relative; top: 40px; right: 20px;
 }
-@media all and (max-width: 402px) {
+}
+
+
+@media all and (max-width: 410px) {
+  #priceDetails{
+    width: 70vw;
+    position: relative; right: 13%;
+      }
 .flexdiv > div > h5 {
-  font-size: 16px;
+  font-size: 4vw;
 }
 #priceDetails > div > div > button {
   padding: 5px 5px ;
@@ -190,9 +208,14 @@ font-size: 5vw;
   display: none;
 }
 .flexdiv > img {
-  width: 20vw;
+  width: 40vw;position: relative; top: 40px; right: 20px;
 }
+
 }
+
+
+
+
 
 /* raing */
 #rating {
@@ -215,6 +238,48 @@ font-size: 5vw;
 #rating>video{
   width: 40vw;
 }
+
+
+@media all and (min-width:404px) and (max-width:620px) {
+  #rating{
+    width: 80vw;
+    position: relative;
+    right: 20%;
+  }
+  #rating>h5{
+    font-size: 3vw ;
+  }
+
+
+}
+
+
+
+
+
+
+@media all and (max-width:403px) {
+  #rating{
+    width: 70vw;
+    position: relative;
+    right: 20%;
+  }
+  #rating>h5{
+    font-size: 5vw ;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 #carsDetails {
   width: 100%;
   padding: 40px 0px 40px 24px;
@@ -260,13 +325,15 @@ font-size: 5vw;
   line-height: 20px;
   color: #5e5b5b;
 }
-@media all and (min-width:491px) and  (max-width: 1088px) {
+@media all and (min-width:490px) and  (max-width: 1088px) {
   #carsDetails {
-    grid-template-columns: 100px auto;
-  gap: 7vw;
+    width: 100vw;
+    grid-template-columns: 100px 600px;
+    position: relative; right: 10%;
+  gap: 10px;
   }
   #carsDetails > section:nth-child(1) {
-  width: 17vw;
+  width: 100px;
 }
   #carsDetails > section:nth-child(1) > h5 {
   font-size: 20px;
@@ -278,20 +345,24 @@ font-size: 5vw;
   width: 50vw;
   margin-left: 20px;
 }
+#carsDetails > section + section > section > p,
+#carsDetails > section + section > section > address {
+ font-size: 10px;
+ line-height: 12px;
+}
 }
 @media all and  (max-width: 490px) {
   #carsDetails {
     grid-template-columns: 100px auto;
   gap: 2vw;
+  width: 100vw;
   }
   #carsDetails > section:nth-child(1) {
-  width: 35vw;
-  margin-right: 20px;
-  font-weight: 600;
-  line-height: 1.33;
+  width: 80px;
+
 }
   #carsDetails > section:nth-child(1) > h5 {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 #carsDetails > section + section {
@@ -301,7 +372,13 @@ font-size: 5vw;
   width: 50vw;
   margin-left: 20px;
 }
+#carsDetails > section + section > section > p,
+#carsDetails > section + section > section > address {
+ font-size: 8px;
+ line-height: 12px;
 }
+}
+
 #FAQs {
   display: grid;
   grid-template-columns: 18vw auto;
@@ -360,18 +437,51 @@ font-size: 4vw;
 #HelpSection>div+ div>div>.faqButton>button{
 margin-top: 20px;
 }
-
+#FAQs {
+  width: 80vw;
+}
 }
 @media all and  (max-width: 490px) {
   #HelpSection>div>h1,#quesleft>h2{
 font-size: 6vw;
 
 }
+#HelpSection {
+  display: flex;
+  flex-direction: column;
+
+  
+}
 #HelpSection >div>img{display: none;}
 #HelpSection>div+ div>div>.faqButton>button{
 margin-top: 20px;
+/* display: none; */
+}
+#HelpSection>div+ div{
+width: 80vw;
+margin-top: -20px;
+  /* border: 1px solid rgb(201, 16, 16); */
 }
 
+
+#quesleft+div>section>div{
+  width: 70vw;
+}
+#quesleft+div>section >div>h2{
+font-size: 10px; font-weight: bolder;}
+
+.paragraph{
+line-height: 20px; font-size: 10px;
+}
+hr{
+  margin: 5px;
+  margin-top: -10px;
+}
+
+#footer{
+  width: 100vw;
+  border-radius: 10px;
+}
 }
 
 
@@ -459,11 +569,6 @@ border-color: #0d7d0d;
 }
 
 
-
-
-
-
-
 .refer_top {
   margin-bottom: 20px;
 }
@@ -509,3 +614,4 @@ color: #0d7d0d;
 .refer_bottom>div>p{
   font-size:10px ;
 }
+
