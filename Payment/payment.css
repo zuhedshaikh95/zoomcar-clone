@@ -270,6 +270,18 @@ hr{
 }
 
 
+@media all and (min-width:480px) and (max-width:780px){
+    .open-button{
+      
+        margin-top: 10px;
+    }
+    hr{
+        width: 300px;
+    }
+    .credit{
+        margin-right: -30px;
+    }
+}
 
 
 

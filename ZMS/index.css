@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Open+Sans&display=swap");
 *{
+  margin: 0px;
+  padding: 0px;
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
@@ -448,13 +450,92 @@ input:hover{
   margin-top: 2%;
   color: gray;
 }
-/* media queries*/
-@media all and (min-width: 300px) and (max-width:780px){
-          #container11{
-            width: 100%;
-            font-size: 13px;
-          }
-          #para{
-            font-size: 10px;
-          }
+
+@media all and (min-width:480px) and (max-width:780px){
+  #container11>p{
+    font-size: 14px;
+    
+  }
+  #container11{
+    width: 1000px;
+    text-align: center;
+  }
+  #container10{
+    width: 1000px;
+  }
+ #container9{ 
+    margin-left: 40%; 
+    
+    width: 500px; 
+ }
+ #container9>div>p{
+          font-size: 11px;
+ }
+ #container9>input{
+  height: 20px;
+  
+ }
+ #container7{
+  
+  padding: 0px;
+  margin-left: 200px;
+  width: 500px;
+ }
+ #container5>img{
+  
+  width: 600px;
+  margin-left: 200px;
+ }
+ #container6{
+  width: 600px;
+  margin-left: 200px;
+ }
+ #container4{
+  grid-template-columns: repeat(2,1fr);
+  width: 700px;
+  margin-top: 20px;
+ }
+ #container3{
+  width: 900px;
+ }
+ #container24{
+ 
+  margin-left: -240px;
+  width: 800px;
+  padding: 0px;
+ }
+ #container23{
+  width: 700px;
+ 
+ }
+ #container22{
+  width: 700px;
+  margin-left: 100px;
+ }
+ #container2{
+  
+  margin-left: 100px;
+  width: 700px;
+ }
+ #container13{
+  display: none;
+}
+#container1{
+  
+  width: 900px;
+}
+#container12{
+       
+        
+        display: flex;
+}
+#container12>button{
+  width: 800px;
+  margin-top: -100px;
+}
+#container12>div{
+ 
+  margin-top: -100px;
+}
+
 }
