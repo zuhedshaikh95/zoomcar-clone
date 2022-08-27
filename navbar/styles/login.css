@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Open+Sans&display=swap');
+*{
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+#container{
+  width: 400px;
+  margin: auto;
+}
+#container > div {
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+}
+#container > div:nth-child(1) {
+  height: 70px;
+}
+#container > div:nth-child(2) > img {
+  width: 100%;
+}
+#container > div:nth-child(3) {
+  margin-top: 20px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container > div:nth-child(4) {
+  display: flex;
+  gap: 20px;
+  color: #666666;
+}
+#container > div:nth-child(6) {  
+  color: green;
+  font-size: 17px;
+}
+#container > div:nth-child(8) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: green;
+}
+#selectcountry{
+  width: 70px;
+border: none;
+display: flex;
+align-items: center;
+gap: 10px;
+
+}
+#selectcountry>img{
+  width: 20px;
+  height: 20px;
+}
+#selectcountry>img>p{
+  font-size: 20px;
+}
+#logDetails>input{
+width: 200px;
+ border: none;
+ outline: none; 
+}
+#container>hr{
+  width: 100%;
+  margin: auto; 
+}
+
+@media all and (min-width: 280px) and (max-width: 780px){
+  #container{
+    width: 100%;
+  }
+  h3{
+    font-size: 12px;
+  }
+  p{
+    font-size: 10px;
+  }
+  #selectcountry>img{
+    width: 10px;
+    height: 10px;
+  }
+  #selectcountry>img>p{
+    font-size: 10px;
+  }
+  #logDetails>input{
+    width: 100px;
+     border: none;
+     outline: none;
+     font-size: 10px;
+    }
+    #container > div:nth-child(4) {
+      display: flex;
+      gap: 5px;
+      color: #666666;
+    }
+    #selectcountry{
+      width: 15%;
+    }
+}

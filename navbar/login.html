@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/sign-up</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div></div>
+      <div>
+        <img
+          src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg"
+          alt=""
+          id="manImg"
+        />
+      </div>
+      <div><h3>Enter details to login/sign-up</h3></div>
+      <div id="logDetails">
+        <span id="selectcountry">
+          <img src="./images/india-flag-icon.png" alt="error">
+          <p>+91</p>
+        </span>
+        <input type="tel" placeholder="Enter Mobile Number" onclick="process()">
+      </div>
+      <hr>
+      <div>
+        <p>Continue with Email ID</p>
+      </div>
+      <hr>
+      <div>
+        <p>Continue via Social</p>
+        <img
+          src="https://www.zoomcar.com/build/62ba375ec1a9fbcbee9e9099181c8d38.svg"
+          alt=""
+        />
+        <img
+          src="https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let process =()=>{
+    window.location.href='login-page.html'
+  }
+</script>
