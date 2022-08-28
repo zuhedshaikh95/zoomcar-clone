@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://www.zoomcar.com/fav/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar" id="mainNav">
+        
+    </nav>
+    <div id="backgroundImg">
+        <section class="search">
+     <!-- back-ground image and form//upper part -->
+            <form>
+            <div id="ride-selection">
+                <div id="road" onclick="changeToRoad()">
+                    <div id="div-content">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmd0o37WqMvSONzvAKMis6yj2O2jAUvXeF5w&usqp=CAU"></div>
+                    <div style="font-stretch:ultra-expanded">Round Trip</div>
+                    </div>
+                </div>
+                <div id="air" onclick="changeToAir()">
+                    <div id="div-content">
+                        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBaog8E36pK6W53G2-wTlR6KxsGibNyZd4g&usqp=CAU"></div>
+                        <div style="font-stretch:ultra-expanded">Airport</div>
+                    </div>
+                </div>
+            </div>
+            <div id="city-selection">
+                <div>
+                    <div id="circle"></div>
+                    <select id="select" required>
+                        <option id="show-airport">Pick Up City, Airport, Address or Hotel</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Delhi">Delhi NCR</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chennai">Chennai</option>
+                        <option>Air Port</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-date">
+              <div>
+                <label for="start-date">From</label>
+                <input type="datetime-local" id="start" required>
+              </div> 
+              <div>
+                <label for="end-date">Till</label>
+                <input type="datetime-local" id="end" required>
+              </div>
+            </div>
+            <input type="submit" value="FIND CARS">
+            </form>
+        </section>
+    </div>
+
+    <!-- divs and images//middle part -->
+
+<div id="container">
+   <div id="wh-content">
+     <div id="flex-content">
+        <div><h3>Do your friend like weekend gateway</h3>
+            <p style="margin-top:26px;font-size:17px">You earn 500 in z-point. Your friends get 20% off on first booking</p>
+        </div>
+        <div><img src="https://zoomcar-assets.zoomcar.com/images/original/1e3becafed3e6151b17c104858b336bb7e076c11.jpeg?1658213048"></div>
+     </div>
+     <div id="footerImg">
+        <img src="https://www.zoomcar.com/img/right-arrow-green.svg">
+        <div><h3>  Refer Friend</h3></div>
+     </div>
+   </div>
+   <div id="wh-content">
+    <div id="flex-content">
+        <div><h2>Up to 20% off</h2>
+            <p style="font-size:18px; color:grey">on your first booking from the app</p>
+            <div><p  style="color:grey; font-size: 22px; border:1px dashed grey;padding:7px">Use Code : ZOOMNEW</p></div>
+        </div>
+        <div><img src="https://www.zoomcar.com/img/cellphone.png"></div>
+     </div>
+     <div><h2 style="color:green">Install Zoomcar App Now</h2></div>
+   </div>
+</div>
+
+    <!-- promo cards//third part -->
+
+<div id="promo">
+ <div id="promo-div">
+    <a href="front.html">
+    <div>
+        <img src="https://zoomcar-assets.zoomcar.com/pictures/original/d70e7f58da384df0f3ba169cf19e8e931879c66c.jpeg?1652354515">
+    </div>
+    </a>
+    <a href="front.html">
+    <div>
+        <img src="https://zoomcar-assets.zoomcar.com/pictures/original/55c3970a33c8f4d10dd3c9ace39d20e32af5c8ba.jpg?1651758755">
+    </div>
+   </a>
+   <a href="front.html">
+    <div>
+        <img src="https://zoomcar-assets.zoomcar.com/pictures/original/bf00a1ae4448e84bbd2ef285970c2cc8527dc305.jpg?1660131373">
+    </div>
+   </a>
+   <a href="front.html">
+    <div>
+        <img src="https://zoomcar-assets.zoomcar.com/pictures/original/e3dfe0ed91abc29facaf56a327b4498ce4e9b75e.jpeg?1652363808">
+    </div>
+   </a>
+</div>
+</div>
+<div id="book"><button>Book Now</button></div>
+<!-- offer part//4th part -->
+
+<div id="offers">
+    <h4>OFFERS</h4>
+    <img src="https://zoomcar-assets.zoomcar.com/photos/original/67aa017f464b45e52f7bc9a206245e5f15f5a316.jpg?1655478529">
+</div>
+<!-- footers//bottom part -->
+
+<div id="about">
+    <div>About Us</div>
+</div>
+<div id="details">
+    <div id="detail-write">
+    <div>
+    <h3><b>SELF DRIVE CAR RENTALS</b></h3>
+    <p>
+        Besides the all-inclusive feel, the city is witnessing a
+        shifting culture that calls for an equal focus on work and leisure.
+        Almost every work day ends in a relaxing meal with friends, and
+        frequent road trips are the norm. With youngsters increasingly
+        viewing driving as a pleasure rather than a chore, self drive car
+        rentals have emerged as the answer to a prayer.
+    </p>
+    </div>
+
+    <div>
+    <h3><b>CAR RENTAL IN</b></h3>
+    <p>
+        If you love cars, but find it hard to identify one which is perfect
+        for you, Zoomcar serves as an interesting option. We make it
+        possible for you to pick your car based on your travelling needs.
+        While small cars allow you to manoeuvre through city traffic and are
+        ideal for a daily commute, sedans and SUV’s offer more comfort. They
+        are well suited for group travel and can add to the joy of road
+        trips.Take your friends on a memorable trip from to your favourite place.
+        in a spacious SUV from Zoomcar. A definite perk is that
+        Zoomcar&nbsp;comes with limited liability, and relieve you of the
+        financial burden of investing in a four-wheeler while offering the
+        freedom of having a self driven car at your disposal. &nbsp; When
+        you choose to drive a car in the city, you do away with the hassle
+        of having to coordinate with the drivers who operate traditional car
+        rentals.With Zoomcar you can avoid the need to
+        hire an exorbitantly priced airport cab . Airport boasts of a Zoomcar parking lot where you can
+        opt for a car rental in cities without driver as soon as you get
+        off your flight.&nbsp;Indulge your passion for luxury cars and make
+        every a special occasion memorable by opting to drive a slick luxury
+        car yourself. You could opt for it for the sheer pleasure and
+        experience too! &nbsp;
+    </p>
+    </div>
+
+    <div>
+    <h3><b>CAR ON RENT IN</b></h3>
+    <p>
+        Your experience with Zoomcar begins with the convenience of online
+        booking. The cars listed on our site come with all India permits,
+        Road Side Assistance&nbsp;(RSA), and include vehicle insurance. It
+        is extremely easy to pick the car as there are multiple parking
+        sites across the city. They also prove to be a safe bet for
+        independent, young women who like to be behind the wheel. Whether
+        you need it for a couple of hours or require it over many days, you
+        can choose the perfect self-drive car.Hire a car.
+        <span>through the Zoomcar app or online conveniently for tech-enabled booking, tracking and hassle-free payment options.</span>
+        <br />
+    </p>
+    </div>
+
+    <div>
+    <h3><b>ABOUT ZOOMCAR</b></h3>
+    <p>
+        
+        No more worries about petrol mileage, fuel costs, insurance, and
+        car breakdowns! Zoomcar has enabled driving convenience for
+        travellers around the country and is fast expanding its reach to
+        cities including Ahmedabad, Bangalore, Chandigarh, Chennai,
+        Coimbatore, Delhi-NCR, Hyderabad, Jaipur, Kochi, Kolkata,
+        Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and
+        Vizag.<br />
+         Self drive cars from Zoomcar have given
+        customers more control, privacy, and freedom.&nbsp;Book
+        a&nbsp;self drive&nbsp;car in any city you visit with the Zoomcar
+        app on your phone and feel at home wherever you go.&nbsp;
+    </p>
+    </div>
+</div>
+</div>
+
+<div style="display:flex; justify-content:space-around">
+<div id="footer-img">
+    <img src="https://www.zoomcar.com/build/6b51f1464b17dbb1d002f16e26572662.png"alt=""/>
+</div>
+<div id="mother">
+    <div id="container"></div>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><a href="https://www.embedgooglemap.net">google maps in iframe</a></div>
+    </div>
+  </div>
+</div>
+  <div id="copyright">© Copyright 2022 Zoomcar India Private Ltd. All rights reserved </div>
+</body>
+<script src="./scripts/index.js"></script>
+</html>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/445205b9df.js" crossorigin="anonymous"></script>
+
+<script type="module">
+    import { afterLogin, beforeLogin } from "./components/header.js";
+    let user = JSON.parse(localStorage.getItem("current-user")) || null;
+  
+    let navbar = document.getElementById("mainNav");
+  
+    if (user != null) {
+      navbar.innerHTML = afterLogin();
+      document.getElementById("name").innerText = user.name;
+      document.getElementById("uName").innerText = user.name;
+      document.getElementById("email").innerText = user.email;
+      document.getElementById("mob").innerText = user.number;
+      document.getElementById("city").innerText = user.city;
+    } else {
+      navbar.innerHTML = beforeLogin();
+    }
+  
+    let logout = document.getElementById("logout");
+    if (logout) {
+      logout.addEventListener("click", logoutMe);
+    }
+  
+    function logoutMe() {
+      swal({
+        title: "Are you sure?",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+        if (willDelete) {
+          localStorage.setItem("current-user", JSON.stringify(null));
+          window.location.href = "login-page.html";
+          swal("You are successfully logout!", {
+            icon: "success",
+          });
+        }
+      });
+    }
+    
+    if (user != null) {
+      let goToProfile = document.getElementById("uName");
+      let goToProfile1 = document.getElementById("logData");
+  
+      goToProfile.addEventListener("click", profile);
+      goToProfile1.addEventListener("click", profile1);
+  
+      function profile() {
+        window.location.href = "profile.html";
+      }
+  
+      function profile1() {
+        window.location.href = "profile.html";
+      }
+    }
+  </script>

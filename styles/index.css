@@ -1,0 +1,363 @@
+/* back-ground image and form//upper part  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#backgroundImg{
+    background-image:url("https://www.zoomcar.com/img/banner_roundtrip.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:600px;
+    width:100%;
+    border:1px solid white;
+    margin-top: -50px;
+}
+form{
+max-width: 440px;
+display: flex;
+flex-direction: column;
+margin:300px auto 50px auto;
+
+}
+form>div{
+height:66px;
+display:flex;
+}
+#ride-selection>div{
+ height:80%;
+ width:50%;
+ border:1px solid limegreen;
+ background-color: white;
+ text-align: center;
+ border-radius: 3px;
+ 
+}
+#div-content>div>img{
+height:10%;
+width:10%;
+margin-top:2%
+}
+#submit-form>div,#city-selection>div,#date>div,#submit-form>div{
+height:80%;
+width:100%;
+background-color: white;
+border-radius: 5px;
+display:flex;
+}
+.input-date{
+    display: flex;
+    justify-content: space-between;
+}
+select{
+width:100%;
+margin-left:8%;
+border:0px;
+border-radius: 5px;
+padding: 0;
+outline: none;
+}
+input{
+    outline: none;
+    padding: 6px;
+    display: block;
+    width: 83%;
+    border: 1px solid white;
+    height: 50px;
+}
+label{
+    font-weight: 800;
+}
+input[type="submit"]{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #1cb01c;
+    border: 1px solid #1cb01c;
+    border-radius: 5px;
+    color: white;
+}
+#circle{
+background-color:#1cb01c;
+border-radius:50%;
+width:3%;
+height:17%;
+margin:6% auto auto 2%
+}
+#submit-form>div>div{
+height:40%;
+width:40%;
+margin:4% 22% 30% auto;
+font-size: 19px;
+font-stretch:extra-expanded ;
+font-weight: 400;
+background-color: rgb(28, 176, 28);
+color:white;
+}
+#submit-form>div{
+background-color: rgb(28, 176, 28);
+}
+
+/* divs and images//middle part */
+
+#container{
+display:flex;
+margin:auto;
+width:80%;
+justify-content: space-around;
+margin-top:70px;
+}
+#wh-content{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+width:35%;
+padding:20px;
+height:5%
+}
+#flex-content{
+display:flex;
+justify-content:space-between;
+height:70%;
+}
+#flex-content>div>img{
+height:99%;
+width:100%;
+margin-right:0px;
+}
+#flex-content>div{
+height:200px
+}
+#footerImg{
+display:flex;
+border-top:1px solid grey
+}
+
+/* promo cards//third part */
+
+#promo-div{
+display:grid;
+gap:20px;
+grid-template-columns: repeat(2, 1fr);
+width:80%;
+margin:auto
+}
+#promo-div>a>div>img{
+width:100%;
+height:100%;
+}
+#promo{
+background-color: rgb(240, 241, 241);
+margin-top:50px;
+padding:20px
+}
+button{
+margin:auto;
+background-color: green;
+font-size: 18px;
+color:white;
+border:none;
+padding:10px;
+font-weight: 300px;
+}
+#book{
+width:9%;
+margin:50px auto 50px auto;
+}
+
+
+/* offer part//4th part */
+
+#offers{
+height:auto;
+width:80%;
+margin:auto;
+margin-top:40px;
+}
+#offers>img{
+width:100%;
+height:500px
+}
+
+/* footers//bottom part */
+
+#about{
+width:100%;
+background-color: rgb(240, 241, 241);
+border-bottom: 1px solid black;
+}
+#about>div{
+height:auto;
+width:10%;
+margin:auto;
+padding:10px
+}
+#details{
+width:95%;
+margin:auto;
+padding: 10px 30px;
+line-height: 22px;
+background-color: rgb(250, 251, 251);
+}
+#detail-write{
+width:80%;
+margin:auto;
+}
+#details>div>div>h3{
+margin-top: 20px;
+}
+#footer-img > img {
+margin-top: 50px;
+width: 240px;
+height: 240px;
+max-width: 229px;
+}
+#copyright{
+text-align:center;
+}
+
+/* map appending part */
+  /* map appending */
+
+  .mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+#mother,#weekly{
+    display:flex;
+    margin-left:50px;
+    margin-top:30px
+}
+
+@media all and (min-width:480px) and (max-width:768px){
+    #promo-div{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        height:20%;
+        width:100%;
+        font-size:10px;
+    }
+    #backgroundImg{
+        background-size: contain;
+    }
+    .input-date{
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    input[type="submit"]{
+        margin-top: 80px;
+    }
+    button{
+        font-weight: 50;
+        font-size:10px;
+    }
+    #container{
+        display:block;
+        font-size:10px;
+        width:100%;
+        margin-top:100px;
+        height:50vh
+    }
+    #wh-content{
+        width:100%;
+        height:50%;
+        margin:auto;
+    }
+    form{
+        margin: 250px auto 60px auto;
+        font-size:10px;
+    }
+    .search{
+        margin-bottom: 600px;
+        font-size:10px;
+    }
+    #promo-div>a>div{
+        height:30vh;
+        width:80%;
+        margin:auto;
+    }
+    #offers{
+        width:40%;
+    }
+    #offers>img{
+        height:40vh;
+        object-fit:contain;
+    }
+    #details{
+        content-visibility: hidden;
+    }
+    #footer-img>img{
+        object-fit:contain
+    }
+    #mother{
+        content-visibility: hidden;
+    }
+}
+@media all and (min-width:320px) and (max-width:479px){
+    #promo-div{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        height:20%;
+        width:100%;
+        font-size:10px;
+    }
+    #backgroundImg{
+        background-size: contain;
+    }
+    button{
+        font-weight: 50;
+        font-size:10px;
+    }
+    #container{
+        display:block;
+        font-size:10px;
+        width:100%;
+        margin-top:100px;
+        height:50vh
+    }
+    #wh-content{
+        width:100%;
+        height:50%;
+        margin:auto;
+    }
+    form{
+        margin:150px auto 60px auto;
+        font-size:10px;
+    }
+    .search{
+        margin-bottom: 600px;
+        font-size:10px;
+    }
+    #promo-div>a>div{
+        height:30vh;
+        width:80%;
+        margin:auto;
+    }
+    #offers{
+        width:40%;
+    }
+    #offers>img{
+        height:40vh;
+        object-fit:contain;
+    }
+    #details{
+        content-visibility: hidden;
+    }
+    #footer-img>img{
+        object-fit:contain
+    }
+    #mother{
+        content-visibility: hidden;
+    }
+}

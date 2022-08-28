@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Open+Sans&display=swap");
+*{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+#container1{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+}
+
+/*#container2>div>img{
+    width: 4%;
+    height: 60px;
+    margin-left: 36%;
+    cursor: pointer;
+    
+}
+.container21>h3{
+    text-align: center;
+    margin-top: -4%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.container21>h3>a{
+    color: black;
+    text-decoration: none;
+}
+.container21>h3+p{
+    text-align: center;
+    margin-top: -1%;
+    margin-left: 4%;
+}  
+hr{
+    width: 35%;
+    margin-left: 35%;
+}
+.net{
+   margin-left: -6%;
+}
+#container22{
+    margin-left: 41.5%;
+    margin-top: -1%;
+}
+#upi{
+    margin-left: 33%;
+    width: 10%;
+    height: 100px;
+    cursor: pointer;
+}
+#upihead{
+    margin-top: -10%;
+    cursor: pointer;
+}
+#container22>#upipara{
+    margin-left: -71%;
+}
+
+.pop_up{
+    height: 250px;
+    width: 25%;
+    background-color:white;
+    padding: 20px;
+    border-radius:5px ;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pop_up>button>a{
+    text-decoration: none;
+}
+#cardnumber{
+    width: 96%;
+    height: 35px;
+}
+#expiry{
+    margin-top: 10%;
+    width: 32%;
+    height: 35px;
+}
+#cvv{
+    margin-top: 10%;
+    width: 32%;
+    height: 35px;
+    margin-left: 15%;
+    
+}
+#credit{
+    margin-top: 5%;
+    width: 96%;
+    height: 35px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: 0px;
+    color: gray;
+}
+input:hover{
+    border: 1px solid green;
+}
+.close{
+    width: 10%;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    right: -1px;
+    cursor: pointer;
+}
+
+*/
+
+#cardnumber{
+    width: 96%;
+    height: 35px;
+}
+#expiry{
+   /* margin-top: 10%;*/
+    width: 38%;
+    height: 35px;
+    
+  top: 50%;
+  left: 50%;
+}
+#cvv{
+   /* margin-top: 10%;*/
+    width: 38%;
+    height: 35px;
+    margin-left: 15%;
+  
+    top: 50%;
+    left: 50%;
+}
+#credit{
+    margin-top: 5%;
+    width: 96%;
+    height: 35px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: 0px;
+    color: gray;
+}
+
+
+
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+ /* display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  left: 65%;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 380px;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: white;
+ 
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border: 1px solid green;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:white;
+  width: 20%;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: -8%;
+  left: 85%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.credit{
+    width: 5%;
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.creditpara{
+    margin-left: 37%;
+   margin-top: -2%;
+
+}
+.open-button{
+   right: 500px;
+   top: 8.7%;
+   height: 50px;
+  left: 35.5%;
+  font-size: 20px;
+   background-color: white;
+   color: black;
+   border: 0px;
+}
+hr{
+    width: 38%;
+    margin-left: 30%;
+}
+
+.normal{
+    margin-top: -5%;
+    margin-left: 37%;
+    color: gray;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+
+.creditparaa{
+    margin-left: 37%;
+   margin-top: -1%;
+
+}
+
+
+@media all and (min-width:480px) and (max-width:780px){
+    .open-button{
+      
+        margin-top: 10px;
+    }
+    hr{
+        width: 300px;
+    }
+    .credit{
+        margin-right: -30px;
+    }
+}
+
+
+

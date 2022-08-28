@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Open+Sans&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+}
+#mainNav {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu {
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+#pnm {
+  width: 30%;
+  color: white;
+  margin-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#rest {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  color: white;
+  gap: 40px;
+}
+#rest > h5 > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+#bah {
+  width: 180px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 0px 10px;
+  border-radius: 50px;
+  height: 45px;
+}
+#bah a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+#bah > p {
+  font-size: 16px;
+  margin-top: 12px;
+  margin-left: 10px;
+  color: black;
+}
+#user {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+}
+#user:hover {
+  cursor: pointer;
+}
+#uName {
+  font-size: 16px;
+  font-weight: bold;
+}
+#logData {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+}
+#logData:hover {
+  cursor: pointer;
+}
+#logData > p {
+  color: #5a5a5a;
+}
+#logData > p:nth-child(2) {
+  margin-bottom: 0px;
+}
+#logData > h5 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.child {
+  /* width: 40%; */
+  display: flex;
+  justify-content: space-between;
+}
+.box1 > p {
+  font-weight: bold;
+  color: #a35c00;
+}
+.child > p {
+  margin-left: 10px;
+}
+#sideContent > hr {
+  width: 90%;
+  margin: auto;
+}
+#city {
+  font-weight: bold;
+  color: #10a310;
+}
+#logo {
+  margin-top: 10px;
+}
+
+#logData1 {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e5e8ec;
+}
+#logData1 > p {
+  margin-top: 15px;
+}
+#mycity {
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+#logme > a {
+  text-decoration: none;
+  color: white;
+}
+#logme1 > a {
+  text-decoration: none;
+  color: black;
+}
+#logout:hover {
+  cursor: pointer;
+}
+
+/* Profile page css *************************************/
+nav {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#c1,
+#c2 {
+  background-color: white;
+}
+#profileCont {
+  width: 88%;
+  margin: auto;
+  position: relative;
+  top: 90px;
+  display: grid;
+  grid-template-columns: 26% 73%;
+  gap: 1%;
+}
+#profileCont > div {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+#pDet {
+  width: 100%;
+  text-align: center;
+}
+#pDet > img {
+  width: 28%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  color: #5a5a5a;
+}
+#pDet > p {
+  margin-bottom: 0px;
+}
+#pDet > p:nth-child(2) {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+#pDet > p:nth-child(3) {
+  font-size: 13px;
+}
+#pDet > p:nth-child(4) {
+  font-size: 13px;
+}
+#c1 > hr {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.prof {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+#c1 > p {
+  margin-left: 65px;
+}
+#c1 > ul {
+  margin-left: 35px;
+  color: #10a310;
+  font-weight: bold;
+}
+
+#hd {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#hd > p {
+  color: black;
+  margin-top: 15px;
+}
+#pd {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#pd > p {
+  margin-bottom: -10px;
+}
+#pd > p ~ p {
+  font-size: 12px;
+  margin-top: -10px;
+}
+.grid1 {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid1 > p {
+  font-size: 12px;
+}
+.grid1 > input {
+  width: 200px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+#flx1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.grid2 {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid3 {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid2 > p {
+  font-size: 12px;
+}
+.grid3 > p {
+  font-size: 12px;
+}
+.grid3 > select {
+  width: 180px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.grid2 > select {
+  width: 180px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+#update {
+  display: block;
+  margin: auto;
+  width: 150px;
+  border: 1px solid black;
+  height: 40px;
+  margin-top: 100px;
+  background-color: white;
+}
+#pd > hr + p {
+  margin-bottom: 20px;
+}
+#pd > p:nth-child(1) {
+  font-size: 18px;
+}
+#pd hr {
+  border: 1px solid black;
+}
+#bah2 {
+  display: none;
+}
+/*********navbar md****************/
+@media all and (min-width: 50px) and (max-width: 850px) {
+  #user {
+    display: none;
+  }
+  #pnm img,
+  h5 {
+    display: none;
+  }
+  #mainNav {
+    background-color: transparent;
+  }
+  #bah {
+    display: none;
+  }
+  #bah2 {
+    width: 90px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 50px;
+    height: 45px;
+  }
+  #bah2 a {
+    text-decoration: none;
+    color: white;
+  }
+  #bah2 > p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: black;
+  }
+  #bah2:hover {
+    cursor: pointer;
+  }
+  #menu {
+    color: black;
+  }
+  #rest {
+    width: 20%;
+  }
+  #profileCont {
+    top: 0px;
+    width: 100%;
+  }
+}
+/************profile page md*********************/
+@media all and (min-width: 781px) and (max-width: 1410px) {
+  #profileCont {
+    width: 100%;
+    margin: auto;
+  }
+  #profileCont * {
+    font-size: 13px;
+  }
+  #c2 * {
+    font-size: 13px;
+  }
+  #c2 input {
+    width: 80%;
+    height: 25px;
+    padding-left: 5px;
+  }
+  #c2 select {
+    width: 90%;
+    height: 25px;
+    padding-left: 5px;
+  }
+  .grid2 {
+    width: 80%;
+  }
+  .grid3 {
+    width: 80%;
+  }
+  .grid1 {
+    width: 80%;
+  }
+  #flx1 {
+    width: 80%;
+  }
+  #c1 > hr {
+    width: 96%;
+  }
+  #update {
+    width: 125px;
+    height: 30px;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 780px) {
+  #profileCont {
+    margin: auto;
+    grid-template-columns: repeat(1, 100%);
+    gap: 1% 0%;
+  }
+  #profileCont * {
+    font-size: 10px;
+  }
+  #c2 * {
+    font-size: 10px;
+  }
+  #c2 input {
+    width: 80%;
+    height: 20px;
+  }
+  #c2 select {
+    width: 60%;
+    height: 20px;
+  }
+  .grid2 {
+    width: 100%;
+  }
+  .grid3 {
+    width: 100%;
+  }
+  .grid1 {
+    width: 100%;
+  }
+  #flx1 {
+    flex-direction: column;
+  }
+  #update {
+    width: 100px;
+    height: 25px;
+  }
+}

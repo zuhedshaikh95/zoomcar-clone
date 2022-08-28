@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <link rel="stylesheet" href="./styles/payment.css">
+</head>
+<body>
+                  <div id="container1">
+                         
+                  </div>
+
+                   <div>
+                  <img class="credit"src="https://www.freeiconspng.com/thumbs/credit-card-icon-png/credit-card-2-icon-7.png" alt="">
+                  <button class="open-button" onclick="openForm()">Credit / Debit / ATM Card</button>
+                  <p class="creditpara">All major card providers are supported</p>
+                  <hr>
+                  
+                  <div>
+                    <img class="credit"src="data:image/png;base64,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" alt="">
+                    <h2 class="normal">Net Banking</h2>
+                    <p class="creditparaa">All major Banks are supported</p>
+                    <hr>
+                  
+                    <div>
+                        <img class="credit"src="https://i.pinimg.com/originals/51/46/a6/5146a6fb4e16f80945c2272cf6cc17a0.png" alt="">
+                        <h2 class="normal">Mobile Wallet</h2>
+                        <p class="creditparaa">Paytm Wallet + Postpaid</p>
+                        <hr>
+
+
+
+                        <div>
+                            <img class="credit"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRIZWW-ufkfqhvfhnT8Zscyd14CpDtK8tQQlOvcrsIreHj5qH0FJzD5p4c3CEGU7Cjni0&usqp=CAU" alt="">
+                            <h2 class="normal">UPI</h2>
+                            <p class="creditparaa">Get Rs.79 Instant Cashback on using any UPI payment</p>
+                            <hr>
+
+                  <div class="form-popup" id="myForm">
+                    <form  class="form-container">
+                        <h2>Enter Card Details</h2>
+                  
+                        <input id="cardnumber" type="text" placeholder="Card Number">
+                        <input type="text" placeholder="Expiry(MM/YY)" id="expiry">
+                        <input type="text" placeholder="CVV" id="cvv">
+                     
+                  
+                     
+                  
+                      <input type="submit" class="btn">
+                      <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+                    </form>      
+                               
+
+
+
+</body>
+</html>
+<script src="./scripts/payment.js"></script>

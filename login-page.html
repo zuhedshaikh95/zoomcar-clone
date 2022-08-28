@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.zoomcar.com/fav/favicon.png"/>
+    <link rel="stylesheet" href="./styles/login-page.css">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @ Zoomcar</title>
+    <script src="https://kit.fontawesome.com/445205b9df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="logProc" data-aos="fade-up" class="animated fadeInUpBig">
+        <div>
+            <a href="./login.html"> <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+        <h3>Enter Mobile Number</h3>
+        <div id="contnum">
+            <div id="cont">
+                <img src="./images/india-flag-icon.png" alt="error">
+                <p>+91</p>
+            </div>
+            <input type="tel"  id="number" placeholder="Mobile Number" oninput="validate()">
+        </div>
+        <button id="btn" onclick="verify()">CONTINUE</button>
+    </div>
+</body>
+</html>
+<script src="./scripts/login-page.js"></script>

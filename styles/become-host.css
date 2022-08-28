@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+    --dark-gray: #383838;
+    --white: #ffffff;
+    --dark-black: #1f1f1f;
+    --green: #10a310;
+    --light-gray: #666666;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#host-start{
+    margin: auto;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://www.zoomcar.com/zap/subscribe/build/a2ff940380f1315a0c0aacefb766e858.jpg");
+    max-width: 84vw;
+    height: 58vh;
+    border-radius: 15px;
+}
+
+.start-cont{
+    padding: 60px 0 0 75px;
+}
+
+.start-cont h5{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.29;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.start-cont p{
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: .24px;
+    color: var(--white);
+    font-weight: 400;
+    margin: 4px 0 20px;
+}
+
+.start-cont button{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: .8px;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: var(--green);
+    display: block;
+    border: none;
+}
+
+#video-wrapper{
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 84vw;
+    box-shadow: 0 6px 6px -6px #222;
+    margin-bottom: 2rem;
+}
+
+video{
+    width: 100%;
+    height: 480px;
+    margin-bottom: 1rem;
+}
+
+#luxury-cont{
+    max-width: 84vw;
+    margin: auto;
+}
+
+#luxury-cont img{
+    width: 100%;
+}
+
+.title{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.29;
+    color: var(--dark-black);
+    text-align: center;
+    width: 78vw;
+    margin: 3rem auto 1rem auto;
+}
+
+#earning-cont{
+    max-width: 70vw;
+    margin: auto;
+}
+
+.earn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0 5rem 0;
+}
+
+.earn-box > img{
+    width: 40%;
+}
+
+.earn-content{
+    width: 50%;
+}
+
+.earn-content > span{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: var(--dark-black);
+}
+
+.earn-content > p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    color: var(--light-gray);
+}
+
+.fd-rowr{
+    flex-direction: row-reverse;
+}
+
+#protect{
+    max-width: 78vw;
+    margin: auto;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 3rem;
+}
+
+.left{
+    text-align: left;
+    width: 84vw;
+}
+
+.prot-card{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 12px;
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.prot-card > img{
+    width: 300px;
+}
+
+.prot-card > span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    color: #1f1f1f;
+    margin: 16px 0 4px;
+}
+
+.prot-card > p{
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: .24px;
+    color: var(--light-gray);
+}
+
+/* Responsive CSS */
+@media all and (min-width: 480px) and (max-width:780px){
+    #host-start{
+        max-width: 100%;
+        background-size: cover;
+        height: 375px;
+        background-image: url("https://www.zoomcar.com/zap/subscribe/build/afea1aa2acac35ddd7f67705e34fb2ad.jpg");
+        background-position-y: 100%;
+    }
+
+    #video-wrapper{
+        max-width: 100%;
+    }
+
+    video{
+        height: 240px;
+        width: 100%;
+    }
+
+    #luxury-cont{
+        max-width: 100%;
+    }
+
+    #earning-title{
+        width: 88vw;
+    }
+}
+/* Responsive CSS */

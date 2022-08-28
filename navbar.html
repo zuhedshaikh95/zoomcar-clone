@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @ Zoomcar</title>
+    <link href="https://www.zoomcar.com/fav/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" >
+  </head>
+  <body>
+    <nav class="navbar" id="mainNav">
+
+    </nav>
+  </body>
+</html>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/445205b9df.js" crossorigin="anonymous"></script>
+
+<script type="module">
+  import { afterLogin, beforeLogin } from "./components/header.js";
+  let user = JSON.parse(localStorage.getItem("current-user")) || null;
+
+  let navbar = document.getElementById("mainNav");
+
+  if (user != null) {
+    navbar.innerHTML = afterLogin();
+    document.getElementById("name").innerText = user.name;
+    document.getElementById("uName").innerText = user.name;
+    document.getElementById("email").innerText = user.email;
+    document.getElementById("mob").innerText = user.number;
+    document.getElementById("city").innerText = user.city;
+  } else {
+    navbar.innerHTML = beforeLogin();
+  }
+
+  let logout = document.getElementById("logout");
+  if (logout) {
+    logout.addEventListener("click", logoutMe);
+  }
+
+  function logoutMe() {
+    swal({
+      title: "Are you sure?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        localStorage.setItem("current-user", JSON.stringify(null));
+        window.location.href = "navbar.html";
+        swal("You are successfully logout!", {
+          icon: "success",
+        });
+      }
+    });
+  }
+  
+  if (user != null) {
+    let goToProfile = document.getElementById("uName");
+    let goToProfile1 = document.getElementById("logData");
+
+    goToProfile.addEventListener("click", profile);
+    goToProfile1.addEventListener("click", profile1);
+
+    function profile() {
+      window.location.href = "profile.html";
+    }
+
+    function profile1() {
+      window.location.href = "profile.html";
+    }
+  }
+</script>
+

@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'IBM Plex Sans',sans-serif ;
+}
+#comp_rapid_growing {
+  width: 70vw;
+  margin: auto;    padding: 32px auto;
+}
+.rapid_growing {
+  font-size: 42px;
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  line-height: 1.29;
+  margin-bottom: 7vh;
+}
+.rapid_growing_p {
+  /* overflow-x: scroll; */
+  padding-top: 8px;
+  /* font-family: s; */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  color: #666;
+}
+#Exprience_data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* margin-top: ; */margin-bottom: 5vh;
+}
+#Exprience_data > div {
+  background-color: #fff;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  margin: 32px 0 0;
+  grid-gap: 1px;
+  border-right: 1px solid #a8a8a857;
+}
+#Exprience_data > :nth-child(4) {
+  border: none;
+}
+#Exprience_data > div > h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  padding: 16px 0 12px;
+}
+#Exprience_data > div > p {
+  color: #a8a8a8;
+}
+@media all and  (max-width: 768px) {
+  #Exprience_data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+/* calulator part................... */
+#calculatorBox {
+  padding: 24px 40px;margin-bottom: 5vh;
+}
+#calculatorBox > h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3vw;
+  font-weight: 645;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+#calculatorBox > h4 > span {
+  color: #10a310;
+}
+#calculatorBox > button,
+#priceDetails > div > div > button {
+  background-color: #10a310;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: 0.8px;
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#calculatorBox > a {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.4px;
+  color: #10a310;
+}
+#calculatorBox>button:hover{
+  background-color: #0d7d0d;
+  cursor: pointer;
+}
+.amigo-home__text:hover{
+  color: #0d7d0d;
+  cursor: pointer;
+  font-size: 4vw;
+  
+}
+
+@media all and (min-width: 403px) and (max-width: 803px) {
+/*  #calculatorBox > button {} */
+
+#calculatorBox > button {
+padding: 2vw 2vw;
+font-size: 12px;
+}
+
+}
+@media all and (max-width: 402px) {
+  #priceDetails{
+    width: 70vw;
+    position: relative;
+    right: 10%;
+  }
+#calculatorBox > button {
+padding: 1vw 2vw;
+font-size: 10px;
+}
+#calculatorBox > h4 {
+font-size: 5vw; 
+}
+
+}
+/* below claculator black box */
+#priceDetails {
+  background-image: linear-gradient(270deg, #444, rgb(0, 0, 0));
+  color: white;
+  padding: 50px 60px;
+  border-radius: 20px;
+
+}
+.flexdiv {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+  gap: 10%;
+  /* border: 1px solid #eee; */
+}
+.flexdiv > div > h5 {
+  font-size: 2em;
+  font-weight: 550;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  width: 20vw;
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  sans-serif;
+}
+.flexdiv > img {
+  width: 25vw;
+}
+#priceDetails > p {
+  letter-spacing:.21px;       
+  display: block;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+@media all and (min-width: 403px) and (max-width: 803px) {
+  /* .flexdiv {
+    border: 1px solid rgb(149, 21, 21);
+    grid-template-columns: 70% 10% ;
+    
+  } */
+  #priceDetails{
+width: 70vw;
+position: relative; right: 13%;
+  }
+  .flexdiv > div > h5 {
+  font-size: 17px;
+}
+#priceDetails > div > div > button {
+  padding: 5px 5px ;
+  margin-top: 10px;
+}
+#priceDetails > p {
+ font-size: 13px;
+ text-align: left;
+
+}
+.flexdiv > img {
+  width: 40vw;position: relative; top: 40px; right: 20px;
+}
+}
+
+
+@media all and (max-width: 410px) {
+  #priceDetails{
+    width: 70vw;
+    position: relative; right: 13%;
+      }
+.flexdiv > div > h5 {
+  font-size: 4vw;
+}
+#priceDetails > div > div > button {
+  padding: 5px 5px ;
+  margin-top: 10px;
+}
+#priceDetails > p {
+  display: none;
+}
+.flexdiv > img {
+  width: 40vw;position: relative; top: 40px; right: 20px;
+}
+
+}
+
+
+
+
+
+/* raing */
+#rating {
+  background-color: #f5f5f5;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 20px;
+}
+#rating > h5 {
+  font-size: 24px;
+  line-height: 1.33;
+  color: #1f1f1f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#rating>video{
+  width: 40vw;
+}
+
+
+@media all and (min-width:404px) and (max-width:620px) {
+  #rating{
+    width: 80vw;
+    position: relative;
+    right: 20%;
+  }
+  #rating>h5{
+    font-size: 3vw ;
+  }
+
+
+}
+
+
+
+
+
+
+@media all and (max-width:403px) {
+  #rating{
+    width: 70vw;
+    position: relative;
+    right: 20%;
+  }
+  #rating>h5{
+    font-size: 5vw ;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+#carsDetails {
+  width: 100%;
+  padding: 40px 0px 40px 24px;
+  background-color: #f5f5f5;
+  /* border: 1px solid rgb(172, 21, 21); */
+  margin: 24px 0px 40px 0px;
+  display: grid;
+  grid-template-columns: 212px auto;
+  gap: 7vw;
+  overflow-x: scroll;
+}
+#carsDetails > section:nth-child(1) {
+  width: 15vw;
+  margin-right: 20px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+#carsDetails > section:nth-child(1) > h5 {
+  font-size: 30px;
+}
+
+#carsDetails > section:nth-child(1) > p {
+  color: #5e5b5b;
+  font-size: 18px;
+}
+#carsDetails > section:nth-child(2) {
+  margin-right: 60px;
+}
+#carsDetails > section + section {
+  display: flex;
+  justify-content: center;
+}
+#carsDetails > section + section > section {
+  width: 15vw;
+  margin-left: 20px;
+}
+#carsDetails > section + section > section > img {
+  width: 100%;
+}
+#carsDetails > section + section > section > p,
+#carsDetails > section + section > section > address {
+  text-align: left;
+  line-height: 20px;
+  color: #5e5b5b;
+}
+@media all and (min-width:490px) and  (max-width: 1088px) {
+  #carsDetails {
+    width: 100vw;
+    grid-template-columns: 100px 600px;
+    position: relative; right: 10%;
+  gap: 10px;
+  }
+  #carsDetails > section:nth-child(1) {
+  width: 100px;
+}
+  #carsDetails > section:nth-child(1) > h5 {
+  font-size: 20px;
+}
+#carsDetails > section + section {
+  width: 1400px;
+}
+#carsDetails > section + section > section {
+  width: 50vw;
+  margin-left: 20px;
+}
+#carsDetails > section + section > section > p,
+#carsDetails > section + section > section > address {
+ font-size: 10px;
+ line-height: 12px;
+}
+}
+@media all and  (max-width: 490px) {
+  #carsDetails {
+    grid-template-columns: 100px auto;
+  gap: 2vw;
+  width: 100vw;
+  }
+  #carsDetails > section:nth-child(1) {
+  width: 80px;
+
+}
+  #carsDetails > section:nth-child(1) > h5 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#carsDetails > section + section {
+  width: auto;
+}
+#carsDetails > section + section > section {
+  width: 50vw;
+  margin-left: 20px;
+}
+#carsDetails > section + section > section > p,
+#carsDetails > section + section > section > address {
+ font-size: 8px;
+ line-height: 12px;
+}
+}
+
+#FAQs {
+  display: grid;
+  grid-template-columns: 18vw auto;
+  gap: 50px;
+  margin-top: 8vw;
+  
+}
+/* #FAQs > #quesleft + div > section {
+  /* margin-bottom: 20px; */
+/* }  */
+#quesleft{  width: 15vw;      }
+#quesleft>h2, #HelpSection>div>h1{
+  font-size: 3vw; line-height: 1.29;
+}
+#quesleft+div>section>div{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;}
+  hr{
+    margin: 20px;
+  }
+
+
+  #quesleft+div>section >div>h2{color: #000000d1; font-family: 'Times New Roman', Times, serif;font-weight: lighter;font-size: 18px;}
+.paragraph{
+line-height: 27px; font-size: 15px; color: #666;
+}
+
+#HelpSection {
+display: grid;
+grid-template-columns: 18vw auto;
+gap: 50px;
+margin-top: 100px;
+}
+#HelpSection>div+div{display: flex;justify-content: space-between;border: 1px solid rgba(128, 128, 128, 0.299);
+padding: 20px 20px;
+border-radius: 10px;
+}
+#HelpSection>div+ div>div{display: flex;flex-direction: column;
+justify-content: space-between;}
+#HelpSection>div+ div>div>.faqButton{display: flex; justify-content: space-between;background-color:rgba(255, 255, 255, 0);}
+#HelpSection>div+ div>div>.faqButton>button{background-color:rgba(255, 255, 255, 0);color: #10a310; font-weight:bolder; border: none;}
+
+
+@media all and (min-width:491px) and  (max-width: 803px) {
+#HelpSection {
+display: grid;
+grid-template-columns: 13vw auto;
+gap: 50px;
+}
+#HelpSection>div>h1,#quesleft>h2{
+font-size: 4vw;
+
+}
+#HelpSection >div>img{width: 15vw;}
+#HelpSection>div+ div>div>.faqButton>button{
+margin-top: 20px;
+}
+#FAQs {
+  width: 80vw;
+}
+}
+@media all and  (max-width: 490px) {
+  #HelpSection>div>h1,#quesleft>h2{
+font-size: 6vw;
+
+}
+#HelpSection {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+#HelpSection >div>img{display: none;}
+#HelpSection>div+ div>div>.faqButton>button{
+margin-top: 20px;
+/* display: none; */
+}
+#HelpSection>div+ div{
+width: 80vw;
+margin-top: -20px;
+  /* border: 1px solid rgb(201, 16, 16); */
+}
+
+
+#quesleft+div>section>div{
+  width: 70vw;
+}
+#quesleft+div>section >div>h2{
+font-size: 10px; font-weight: bolder;}
+
+.paragraph{
+line-height: 20px; font-size: 10px;
+}
+hr{
+  margin: 5px;
+  margin-top: -10px;
+}
+
+#footer{
+  width: 100vw;
+  border-radius: 10px;
+}
+}
+
+
+/* footer************************** */
+#footer{
+margin-top: 60px;
+
+width: 100%;
+background-color: rgba(202, 202, 202, 0.189);
+}
+#footer>img{
+padding: 5vw 2vw;
+}
+
+
+
+/* c=alculator**************************************************************** */
+#block{
+display: none;
+z-index: 10;
+border-radius: 20px;
+ animation: calcu 2s 0s 1 ease-in-out;
+  }
+  @keyframes calcu{
+   from{
+      border-radius: 0px;
+      transform: translateX(-220px);
+      background-color: rgba(0, 0, 0, 0.203);
+    }
+    
+to{
+  border-radius: 20px;
+  transform: translateX(0px);
+  
+  
+}
+}
+
+
+
+/* refer and earn */
+/* #Refer_div{
+  width: 300px;
+  /* background-color: rgba(107, 98, 98, 0.734); */
+  /* position: absolute; */
+  /* top: 500px; left: 0px; */
+  /* display: none; */
+  
+ 
+ /* }   */
+#main_refer_popup{
+  display: none;
+  width: 300px;
+  margin: auto;
+  /* margin-top: 20vh; */
+  border: 1px solid #eee;
+  padding: 20px 20px;
+  background-color: rgb(211, 209, 209);
+  border-radius: 20px;
+  box-shadow: rgba(255, 255, 255, 0.777) 0px 22px 70px 4px;
+  position: relative;
+  top: -40vh;
+
+  display:none ;
+  margin-bottom: -20vw;
+  animation: refer 2s 0s 1 ease-in-out;
+  border: 10px solid #0d7d0d;
+}
+@keyframes refer{
+ from{
+    border-radius: 0px;
+    transform: translateY(220px);
+    
+    background-color: rgba(0, 0, 0, 0.203);
+  }
+  
+  to{
+    border-radius: 20px;
+    transform: translateY(0px);
+    
+background-color: #35e122;
+border-color: #0d7d0d;
+
+  }
+}
+
+
+.refer_top {
+  margin-bottom: 20px;
+}
+.refer_top >h2{
+  margin-bottom: 15px;
+}
+.refer_top >p{
+  margin-bottom: 7px;
+
+}
+.refer_img{
+  margin-left: 10%;
+}
+.refer_img>img{
+  width: 15vw;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  mix-blend-mode: multiply;
+}
+
+
+
+.refer_bottom{
+  display: flex;
+  width: 80%;
+  /* border: 1px solid rgb(165, 46, 46); */
+  justify-content: space-between;
+  margin: auto;
+}
+
+.refer_bottom>div>img{
+  width: 20px;
+}
+.refer_bottom>div>p:hover{
+color: #0d7d0d;
+}
+.refer_bottom>div>img:hover{
+  mix-blend-mode: exclusion;
+
+}
+
+.refer_bottom>div>p{
+  font-size:10px ;
+}

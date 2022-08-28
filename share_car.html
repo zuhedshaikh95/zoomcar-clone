@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://www.zoomcar.com/fav/favicon.png" rel="shortcut icon"
+    type="image/png">
+    <title>Share your car &|Zoomcar</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link rel="stylesheet" href="styles/share-car.css">
+    
+  </head>
+
+  <body>
+   <!-- //added -->
+    <article id="comp_rapid_growing">
+      <h5 class="rapid_growing">Growing rapidly</h5>
+      <p class="rapid_growing_p">
+        Join Host program and be part of the largest tech enabled car sharing
+        marketplace.
+      </p>
+      <div id="Exprience_data">
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/e3a6d127cac35a3a7a139256bb3761eb.png"
+            alt=""
+          />
+          <h5>25,000+</h5>
+          <p>Satisfied hosts</p>
+        </div>
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/4a5f55fc81b9a6df6a460a025fdfa509.png"
+            alt=""
+          />
+          <h5>50lack+</h5>
+          <p>Bookings served</p>
+        </div>
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/36da13bf403485c4efacd507efd93735.png"
+            alt=""
+          />
+          <h5>32Cr+</h5>
+          <p>KMs Run</p>
+        </div>
+        <div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/c0db9479a08980b830b63433f60d336c.png"
+            alt=""
+          />
+          <h5>₹300Cr+</h5>
+          <p>Earned by hosts</p>
+        </div>
+      </div>
+
+      <section id="calculatorBox">
+        <h4>
+          Share your <span class="amigo-home__text">XUV 500 🢗</span>
+          <br />
+          and earn up to
+          <span class="home_text_calculation">₹ 49,980</span> per month
+        </h4>
+        <button class="home_btn_calculation">CALCULATE EARNING</button>
+        <br />
+        <a href="#info-modal" class="amigo-home__link--calculation">
+          How do we estimate your earning?
+        </a>
+      </section>
+
+<!-- *******************CALCULATOR******************************************************* -->
+
+<div id="block">
+  <div id="top_total">
+    <p>EARN UPTO</p>
+    <h1>₹ <strong id="price_WRT_time">0</strong>/mo</h1>
+  </div>
+  <div class="modal-body">
+    <select name="" id="brand_model">
+      <option >Select Your Model</option>
+      <option value="Datsun">Datsun</option>
+      <option value="Mahindra">Mahindra</option>
+      <option value="Maruti">Maruti</option>
+      <option value="Tata">Tata</option>
+      <option value="Ford">Ford</option>
+    </select>
+
+    <div id="model">
+      <select id="default_select">
+        <option>Select Model</option>
+        <option value="Redi-Go">Redi-Go</option>
+      </select>
+    </div>
+  </div>
+  <input   id="slider_price"   type="range"   ondragstart="priceslider()"   min="0"   max="31"  value="0"   step="1"  />
+</div>
+    
+
+
+      <!-- section price box............... -->
+      <section id="priceDetails">
+        <div class="flexdiv">
+          <div>
+            <h5>
+              You Earn ₹4,999/- <br />
+              Your Friend Gets upto ₹4,999/-
+            </h5>
+            <p>You Both Win</p>
+            <button onclick="openRefer()">Refer and Earn</button>
+          </div>
+          <img
+            src="https://www.zoomcar.com/zap/subscribe/build/b561826c55602da000820bda8422a23d.webp"
+            alt=""
+          />
+        </div>
+        <p>
+          This opportunity is for your friends in Bangalore, Pune, Delhi NCR,
+          Mumbai, Chennai, Hyderabad, Chandigarh, Kolkata, Ahmedabad,
+          Coimbatore, Indore, Jaipur, Mangalore, Mysore, Vizag, Goa, Nagpur,
+          Kochi, Vijayawada, Siliguri, Bhopal, Lucknow, Guwahati, Bhubaneswar,
+          Vadodara, Nashik, Trichy & Madurai only. <br />Refer multiple friends
+          to earn upto ₹ 1 Lakh.
+        </p>
+      </section>
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- refer section -->
+<!-- <div id="Refer_div"> -->
+
+  <div class="refer_popup" id="main_refer_popup">
+         <div class="refer_top">
+          <h2>Refer and Earn</h2>
+          <p>You Earn ₹4,999/-</p>
+          <p>Your Friend Gets upto ₹4,999/-</p>
+          <p>You Both Win</p>
+         </div>
+         <div class="refer_img">
+          <img src="https://www.zoomcar.com/zap/subscribe/build/2dac7c3e3ed475d15bf341d377b66ed9.svg" alt="">
+         </div>
+         <div class="refer_bottom">
+          <div>
+            <img src="https://www.zoomcar.com/zap/subscribe/build/57cc7c360d39278b0396db7f870e7cd0.png" alt="">
+            <p>Whatsapp</p>
+          </div>
+          <div>
+            <img src="https://www.zoomcar.com/zap/subscribe/build/511323b8e90983b78fe644c8c9075cf2.png" alt="">
+            <p>Facebook</p>
+          </div>
+          <div>
+            <img src="https://www.zoomcar.com/zap/subscribe/build/56993356b7e8876d8eadb92affa38ab7.png" alt="">
+            <p>Twitter</p>
+          </div>
+         </div>
+   </div>        
+ <!-- </div>    -->
+
+
+
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+      <!--star section8888888888888  -->
+      <section id="rating">
+        <h5>
+          Users love Zoomcar Host program. Our app has 4.5+ rating on play
+          store!
+        </h5>
+        <video
+          muted
+          preload="auto"
+          loop="loop"
+          autoplay="auto"
+          src="https://www.zoomcar.com/zap/subscribe/build/993b9e144e89da0b2a0df580e13a2cbe.mp4"
+        ></video>
+      </section>
+
+      <section id="carsDetails">
+        <section>
+          <h5>What are the host users saying?</h5>
+          <p>10,000+ hosts are earning average of ₹ 50,000 per month</p>
+        </section>
+
+        <section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/3f72230754b1fb30e311c9f78848ee62.png"
+              alt=""
+            />
+            <p>
+              I always dreamt of owning a car in which I can take my family for
+              a drive, But, due to high EMIs, I couldn't afford a car. With host
+              program, I reduced my EMI by sharing the car on weekdays and take
+              my family out on weekends. I am happy that I could finally realise
+              my dream, thanks to host.
+            </p>
+            <address>
+              Gajendra Tomar, Age 38 <br />
+              Govt School Teacher, Pune
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/bd8cb705e0b100c897e16bbfff2a275f.png"
+              alt=""
+            />
+            <p>
+              I am an environmentally conscious person. I saw a wonderful
+              opportunity to do something for congested roads and the
+              environment with host program. Sharing my second car on host helps
+              me to reduce traffic and reduce my carbon footprint. And yes,
+              additional earning through my second car is cherry on the cake
+            </p>
+            <address>
+              Srikanth Venkatesh, Age 43
+              <br />
+              VP in an IT Company, Hyderabad
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/5c4df7d7677b23ee3d6c5e32e964303e.png"
+              alt=""
+            />
+            <p>
+              I bought a car recently. But, ended up using it only once or twice
+              a week for errands and grocery visits. I saw a great way to earn
+              additional money through the host program while also having the
+              car to myself on weekends for my grocery visits. It is a win-win
+              situation for me.
+            </p>
+            <address>
+              Archana Sundaram, Age 55
+              <br />
+              Housewife, Hyderabad
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/9f1be46d5b847adf8089338ebb6d89d8.png"
+              alt=""
+            />
+            <p>
+              I am a travel enthusiast and use my car to explore new places. I
+              prefer taking public transport to office, because of which my car
+              stays idle during the weekdays. So, I decided to share my car on
+              host. Now, I earn extra bucks for my travel expenses :)
+            </p>
+            <address>
+              Shishir Gupta, Age 28
+              <br />
+              Young urban professional, Pune
+            </address>
+          </section>
+          <section>
+            <img
+              src="https://www.zoomcar.com/zap/subscribe/build/66c77e4621ef9ac32bdd9b5441ba7e71.png"
+              alt=""
+            />
+            <p>
+              My parents gave me a car so that I can commute safely to college.
+              Since I've been having online classes now, my car wasn't being
+              used much. I shared my car on host so that I could earn some extra
+              pocket money from it. It easy to share the car on host and earn
+              pocket money.
+            </p>
+            <address>
+              Prateek Singh, Age 22
+              <br />
+              College Student, Hyderabad
+            </address>
+          </section>
+        </section>
+      </section>
+   
+   
+
+    <section id="FAQs">
+      <div id="quesleft"> <h2>Still have questions?</h2></div>
+
+      <div>
+        <section>
+          <div onclick="showFAQ_content(1)">
+            <h2>Do I need to meet the renters of my car?</h2>
+            <img   class="downarrow downarrow1"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+           </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph1">
+              We have installed the keyless entry devices in your car, which makes
+              sure that you need not meet any of the renters in person, either at
+              the start, or at the end of any booking.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div onclick="showFAQ_content(2)">
+            <h2>How will I get Paid?</h2>
+            <img   class="downarrow downarrow2"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+          <!-- <img   class="upperarrow" src="https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg"   alt=""  -->
+          </div> 
+          <div>
+            <p style="display: none" class="paragraph paragraph2">
+              Your total earnings will be credited to your bank account every week. You can access your detailed earnings through our Zoomcar Host app.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div onclick="showFAQ_content(3)">
+            <h2>What happens if my car gets challans or traffic fines while my car is being shared?</h2>
+            <img   class="downarrow downarrow3"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+            <!-- <img   class="upperarrow" src="https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg"   alt=""  /> -->
+          </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph3">Zoomcar will take care of all challans incurred during car sharing.
+            </p>
+          </div>
+        </section>
+        <hr />
+      
+        <section>
+          <div onclick="showFAQ_content(4)">
+            <h2>How much will I earn?</h2>
+            <img   class="downarrow downarrow4"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+            <!-- <img   class="upperarrow" src="https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg"   alt=""  /> -->
+          </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph4">You will earn 60% of the booking revenue that your car earns on every booking. Your earnings will be paid to you on a weekly basis. 
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div onclick="showFAQ_content(5)">
+            <h2>How is the price of my car decided?</h2>
+            <img   class="downarrow downarrow5"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+           
+          </div>
+          <div>
+            <p style="display: none" class="paragraph paragraph5">Our intelligent demand based pricing system optimizes the price of your car. We also send you suggestion for peak seasons to share your car. We ensure you get maximum earning while sharing the car.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <section>
+        <div onclick="showFAQ_content(6)">
+          <h2>Why are safety devices installed?</h2>
+          <img   class="downarrow downarrow6"   src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg"   alt=""   />
+          
+        </div>
+        <div>
+          <p style="display: none" class="paragraph paragraph6">
+            These are Zoomcar's proprietary tech devices. They are installed in the car to keep track of car health and location of your car. It keeps your car safe when shared with Guests.
+          </p>
+        </div>
+      </section>
+      </div>
+    </section>
+  
+
+     <!-- help section*************************** -->
+     <section id="HelpSection">  
+      <div ><h1>Still confused?</h1> </div>
+      <div>
+        <div>
+            <div><h1>We are here to help</h1>
+             <p>Visit detailed FAQs section or contact us for more details.</p>
+            </div>
+          <div class="faqButton">
+            <button >FAQs</button> <button>CONTECT US </button>
+          </div>
+      </div>
+
+          <img src="https://www.zoomcar.com/zap/subscribe/build/1481c0a139f0327896e2b071d9e392bd.svg" alt="">
+      </div>
+     </section>
+
+
+<!-- footer section*************** -->
+<div id="footer">
+  <img src="https://www.zoomcar.com/zap/subscribe/build/5335b9a2cd132fc5c25ea3fec1177b02.svg" alt="">
+</div>
+
+  </article>
+  
+  </body>
+</html>
+
+
+
+<script>
+  function showFAQ_content(value){
+    if( document.querySelector(`.paragraph${value}`).style.display=="block"){
+      document.querySelector(`.paragraph${value}`).style.display="none"
+      document.querySelector(`.downarrow${value}`).setAttribute("src","https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg")
+    }
+    else{
+    document.querySelector(`.downarrow${value}`).setAttribute("src","https://www.zoomcar.com/zap/subscribe/build/c35ac180e107c35808bed382d19533d9.svg")
+   document.querySelector(`.paragraph${value}`).style.display="block"
+ 
+  }
+  }
+
+
+let cal_but=document.querySelector(".home_btn_calculation")
+let cal_TEXT=document.querySelector(".amigo-home__text")
+cal_but.addEventListener("click", function(e) {
+  let calculator = document.getElementById("block")
+  if(calculator.style.display == "block"){
+
+    calculator.style.display = "none";
+  }else{
+    calculator.style.display = "block";
+  }
+})
+
+cal_TEXT.addEventListener("click", function(e) {
+  let calculator = document.getElementById("block")
+  if(calculator.style.display == "block"){
+
+    calculator.style.display = "none";
+  }else{
+    calculator.style.display = "block";
+  }
+})
+
+
+
+
+function openRefer() {
+  if(document.getElementById("main_refer_popup").style.display == "block"){
+     
+    document.getElementById("main_refer_popup").style.display = "none";
+  }else{
+    document.getElementById("main_refer_popup").style.display = "block";
+    
+  }
+}
+
+// function closeForm() {
+//     document.getElementById("myForm").style.display = "none";
+// }
+
+
+
+
+
+</script>
+<script type="module" src="./scripts/calculator.js"></script>

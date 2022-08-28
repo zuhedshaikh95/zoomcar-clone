@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/checkout-summary.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <meta http-equiv="refresh" content="10">
+    <title>Checkout Summary</title>
+</head>
+<body>
+    <nav id="cNav">
+        <a href="checkout.html">
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </a>
+        <div id="vDet">
+          <p id="vName1"></p>
+          <p>
+            <span id="start"></span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <span id="end"></span>
+          </p>
+        </div>
+      </nav>
+    <!-- checkOut and payment part -->
+<div id="checkout" style="display:flex; justify-content:space-around">
+    <div id="payment">
+        <h3 style="text-align:center;">Checkout Summary</h3><br/>
+        <div>
+          <p>Trip Fare (Unlimited KMs)</p><br/>
+          <p id="tripFare"></p><br/>
+        </div>
+        <div>
+          <p>Damage Protection Fee                </p><br/>
+          <p id="damage-fee"></p><br/>
+        </div>
+        <div>
+          <p>Convenience Fee added                     </p><br/>
+          <p>&#x20b9; 100</p><br/>
+        </div>
+        <div>
+          <p>Total Fare(to be paid)                         </p><br/>
+          <p id="total-fare"></p><br/>
+        </div>
+        <div>
+          <p>
+            Refundable Deposit<br/>
+        (waiv off for this booking)<br/>
+          </p><br/>
+          <p>&#x20b9; 0/-</p><br/><br/>
+        </div>
+        <div>
+          <p>Final Fare(including tax)                           </p><br/>
+          <h3 id="final"></h3><br/>
+        </div><br/><br/>
+        <button onclick="gotoPayment()">PROCEED TO PAY</button><br/>
+    </div>
+    <div id="booked-car">
+      <h3 style="text-align:center">Booking Details</h3>
+      <div id="img-detail">
+        <div><h3 id="car-name"></h3></div>
+        <div><img id='car-img' src=""></div>
+      </div>
+      <div id="travel-detail">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpARhoW_0oiQtq_wcrh1NdYUK6kTItLbmCg1ssYfqMuexHcjdPD8v&usqp=CAU"></div>
+        <div>Mon, 26 Sep, 08:30 AM<br/>
+          Rasta Peth</div>
+      </div>
+      <div id="travel-detail">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqnwWn8ZXutRjH9ReiyrihCf8Mr4ToZ0lKujF-sExsu2nxLQLt8gr&usqp=CAU"></div>
+        <div>Mon, 26 Sep, 04:30 PM<br/>
+          Rasta Peth</div>
+      </div>
+      <div id="travel-detail">
+        <div><img src="https://zoomcar-assets.zoomcar.com/images/original/ccedfb3dddda918d76ad27240ffa582f4a59a157.png?1584454852"/></div>
+        <div>Unlimited Kms without Fuel</div>
+      </div>
+      <div id="travel-detail">
+        <div><img src="https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533"></div>
+        <div>5.0 · 67,629 kms driven</div>
+      </div>
+      <div id="alert">Exact car location will be shared 4 hours before trip start time</div>
+  </div>
+</div>
+</body>
+</html>
+<script
+  src="https://kit.fontawesome.com/445205b9df.js"
+  crossorigin="anonymous"
+></script>
+<script src="./scripts/checkout-summary.js"></script>

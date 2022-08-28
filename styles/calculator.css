@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+   #block {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 2vh 1vw;
+    padding-bottom: 40px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      margin-bottom: 50px;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1441px) {
+   #block {
+      padding: 10px 10px;
+      width: 30vw;
+      /* height: 45vh; */
+    }
+  }
+  @media all and (min-width:470px) and (max-width: 787px) {
+    #block {
+    width: 40vw;
+
+    }
+  }
+  @media all and (max-width: 669px) {
+    #block {
+    width: 75vw;
+
+    }
+  }
+
+  #top_total {
+    padding: 20px 20px;
+    margin-bottom: 10px;
+  }
+  #top_total > P {
+    font-size: 1vw;
+  }
+  #top_total > h1 {
+    font-size: 3vw;
+  }
+  #brand_model,
+  #model > select {
+    width: 90%;
+    margin-left: 5%;
+    height: 5vh;
+    padding: 7px 7px;
+    border-radius: 5px;
+    margin: 2vh;
+  }
+  #slider_price {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2vh;
+    -webkit-appearance: none;
+    border-radius: 25px;
+    outline: none;
+    height: 0.8vh;
+    box-shadow: inset 0px 0px 4px rgba(49, 150, 76, 0.266);
+    background-color: rgb(7, 197, 57);
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1441px) {
+    #top_total {
+      padding: 20px 20px;
+      margin-bottom: 10px;
+    }
+    #top_total > P {
+      font-size: 1vw;
+    }
+    #top_total > h1 {
+      font-size: 3vw;
+    }
+    #brand_model,
+    #model > select {
+      width: 90%;
+      margin-left: 5%;
+      height: 5vw;
+      padding: 7px 7px;
+      border-radius: 5px;
+    }
+    #slider_price {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 2vh;
+      margin-bottom: -100px;
+      -webkit-appearance: none;
+      border-radius: 25px;
+      outline: none;
+      height: 0.8vh;
+      box-shadow: inset 0px 0px 4px rgba(49, 150, 76, 0.266);
+      background-color: rgb(7, 197, 57);
+    }
+  }
+
+
+  @media all and (max-width: 785x) {
+    #top_total {
+      padding: 10px 20px;
+      margin-bottom: 5px;
+    }
+   
+ 
+    #slider_price {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 4vh;
+      /* -webkit-appearance: none; */
+      border-radius: 25px;
+      outline: none;
+      /* height: 0.8vh; */
+      box-shadow: inset 0px 0px 4px rgba(49, 150, 76, 0.266);
+      background-color: rgb(4, 190, 54);
+        
+    }
+
+
+  }

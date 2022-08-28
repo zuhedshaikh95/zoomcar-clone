@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --white: #ffffff;
+    --green: #10a310;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+body{
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details-box{
+    background-color: #1F1F1F;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+#location{
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.back-icon{
+    color: var(--white);
+}
+
+main{
+    display: flex;
+    height: 400px;
+    margin-top: 20px;
+}
+
+#car-container{
+    width: 70%;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#car-container::-webkit-scrollbar{
+    display: none;
+}
+
+#car-container > div:last-child{
+    margin-bottom: 100px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--white);
+    height: 150px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.content{
+    flex: 1;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.desc{
+    display: flex;
+}
+
+.desc > h3{
+    padding-right: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.16px;
+    line-height: 1.5;
+}
+
+.distance{
+    font-size: 12px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.btn-box{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.btn-box >  button{
+    color: #1f1f1f;
+    border: 1px solid #10a310;
+    padding: 16px 40px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.price{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #1F1F1F;
+    font-weight: 500;
+}
+
+.img-box > img{
+    margin-top: 5px;
+    width: 200px;
+    transform: scale(-1, 1) translate(17%);
+    position: relative;
+}
+
+.bio{
+    margin-top: -10px;
+    color: #a8a8a8;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+
+.rating-box{
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #1f1f1f;
+    display: flex;
+    align-items: center;
+}
+
+.rating-box > img{
+    width: 16px;
+    margin-right: 5px;
+}
+
+.rating-box > span:nth-child(2){
+    margin-right: 5px;
+}
+
+#sort-panel{
+    width: 30%;
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--white);
+    height: 450px;
+}
+
+.title{
+    padding: 10px 0 0 30px;
+    font-weight: 500;
+}
+
+.sort-box{
+    display: flex;
+}
+
+.sort-box > div{
+    width: 80px;
+    height: 50px;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sort-box img{
+    width: 16px;
+    margin-left: 2px;
+}
+
+#sort-panel >  button{
+    float: right;
+    padding: 8px 25px;
+    margin-right: 30px;
+    background-color: #10a310;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+/* Hovers & Effects */
+.main:hover button{
+    background-color: var(--green);
+    color: white;
+}
+/* Hovers & Effects */
+
+
+@media all and (min-width: 480px) and (max-width: 768px){
+    #sort-panel{
+        display: none;
+        margin: auto;
+    }
+
+    #car-container{
+        width: 100%;
+        margin-left: 20px;
+    }
+}

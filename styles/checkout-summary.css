@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#checkout{
+    margin-top: 100px;
+}
+#payment>div{
+    display:flex;
+    justify-content: space-between;
+    border-bottom:1.5px solid rgb(211, 209, 209);
+    height:9vh;
+    width:80%;
+    margin:auto;
+    font-size: 18px;
+  }
+  #payment,#booked-car{
+    height:auto;
+    width:40%;
+    margin-left:5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  #payment>button{
+  background-color: green;
+  font-size: 18px;
+  color:white;
+  border:none;
+  padding:10px;
+  font-weight: 200px;
+  width:80%;
+  margin-bottom: 20px;
+  margin-left:8.5%
+  }
+#img-detail>div>img{
+height:100%;
+width:100%;
+}
+#img-detail{
+background-color: rgb(205, 202, 202);
+display:flex;
+justify-content: space-around;
+}
+#img-detail>div{
+width:35%;
+}
+#travel-detail{
+display:flex;
+margin-left:15px;
+margin-top:5%;
+}
+#travel-detail>div{
+height:17px;
+margin-left:15px;
+margin-top:5%;
+}
+#travel-detail>div>img{
+height:100%;
+width:100%
+}
+#alert{
+height:6%;
+width:80%;
+margin:auto;
+background-color: rgb(206, 225, 255);
+margin-top:5%;
+text-align:center;
+color:blue;
+}
