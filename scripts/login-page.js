@@ -31,7 +31,7 @@ let verify = () => {
 
   if(flag){
     alert("Login successful!");
-    window.location.href="index.html";
+    window.location.href="otp.html";
   }
   else{
     alert("You are not registered!");
