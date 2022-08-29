@@ -81,12 +81,6 @@
 }
 
 #cont2>h1{
-/*font-family: monospace;
-    margin-left: 35%;
-   /* font-size: 38px;
-    margin-top: 10%;
-    padding-top: -35%;
-    font-size: 24px;*/
     font-size: 35px;
     line-height: 1.33;
     padding-top: 80px;
@@ -367,6 +361,11 @@ margin-top: -43%;
   color: white;
   text-align: center;
 }
+#cont9{
+  margin: auto;
+  width: 84vw;
+  text-align: center;
+}
 #cont9>div{
       text-align: center;
       margin-top: 15%;
@@ -411,7 +410,6 @@ input:hover{
   height: 120px;
 }
 #submit{
-  margin-left: 40%;
   margin-top: 3%;
 }
 #cont10{

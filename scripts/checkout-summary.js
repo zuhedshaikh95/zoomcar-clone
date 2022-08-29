@@ -30,3 +30,29 @@ final.innerHTML = "&#x20b9; "+finalfare;
 function gotoPayment(){
     window.location.href="payment.html"
 }
+
+const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+const week = ["Sun","Mon","Tue","Wed","Thurs","Fri","Sat"];
+
+let startDate = new Date(user.pickup);
+let endDate = new Date(user.drop);
+
+let startweek = week[startDate.getDay()]
+let endweek = week[endDate.getDay()];
+
+let startmonth = month[startDate.getMonth()];
+let endmonth = month[endDate.getMonth()];
+
+let starttime = convert(startDate.getTime());
+let endtime = convert(endDate.getTime());
+
+let commence = document.querySelector("#commence");
+let conclude = document.querySelector("#conclude");
+
+commence.innerText = startweek+" , "+startDate.getDate()+" "+startmonth+" , "+starttime;
+conclude.innerText = endweek+" , "+endDate.getDate()+" "+endmonth+" , "+endtime;
+
+function convert(t){
+    let date = new Date(t);
+    return date.getHours("en-US")+":0"+date.getMinutes("en-US")+" hrs";
+}
