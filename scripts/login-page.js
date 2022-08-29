@@ -30,7 +30,7 @@ let verify = () => {
   }
 
   if(flag){
-    alert("Login successful!");
+    // alert("Login successful!");
     window.location.href="otp.html";
   }
   else{

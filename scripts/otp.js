@@ -1,6 +1,6 @@
-let user=JSON.parse(localStorage.getItem('user'))
+let user=JSON.parse(localStorage.getItem('current-user'))
 
-document.getElementById('mNum').innerText=user.mobile
+document.getElementById('mNum').innerText=user.number
 
 let otp='123456'
 let flag=false
@@ -28,6 +28,6 @@ let validateOtp=()=>{
     let val=document.getElementById('otp').value
     if(flag==true&&val==otp){
         alert('Login Sucessful')
-        window.location.href='navbar.html'
+        window.location.href='index.html'
     }
 }
