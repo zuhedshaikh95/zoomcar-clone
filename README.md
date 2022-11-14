@@ -47,7 +47,7 @@ If you want to run our project in your local machine
 ## Creators
 
 - [Zuhed Shaikh]()
-- [Raj Rathore]()
+- [Raj Rathore](https://github.com/Raj-1313)
 - [Laxmi Priya]()
 - [Mitali Raj]()
 - [Prasad Karde](https://github.com/PrasadK05/)
