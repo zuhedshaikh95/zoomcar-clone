@@ -22,15 +22,19 @@ Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The compa
 
     <br />
     <br />
+    <br />
 
 - ### Signup Page
     - <img src="./images/sign-up.png" alt="" />
 
     <br />
     <br />
+    <br />
 
-- ### - <img src="./images/login.png" alt="" />
+- ### Login Page
+    - <img src="./images/login.png" alt="" />
 
+    <br />
     <br />
     <br />
 
@@ -39,10 +43,12 @@ Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The compa
 
     <br />
     <br />
+    <br />
 
 - ### ZMS Page
     - <img src="./images/zms.png" alt="" />
 
+    <br />
     <br />
     <br />
 
@@ -51,10 +57,12 @@ Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The compa
 
     <br />
     <br />
+    <br />
 
 - ### Cars Page
     - <img src="./images/cars.png" alt="" />
 
+    <br />
     <br />
     <br />
 
@@ -63,10 +71,12 @@ Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The compa
 
     <br />
     <br />
-
+    <br />
+    
 - ### Payment Page
     - <img src="./images/payments.png" alt="" />
 
+    <br />
     <br />
     <br />
 
