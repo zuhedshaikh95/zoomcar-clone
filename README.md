@@ -17,24 +17,76 @@ Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The compa
 
 ## Features
 
-- Landing Page
+- ### Landing Page
+    - <img src="./images/home.png" alt="" />
 
-- Signup Page
+    <br />
+    <br />
+    <br />
+    <br />
 
-- Login Page
+- ### Signup Page
+    - <img src="./images/sign-up.png" alt="" />
 
-- User Profile Page
+    <br />
+    <br />
+    <br />
+    <br />
 
-- ZMS Page
+- ### - <img src="./images/login.png" alt="" />
 
-- Become A Host Page
+    <br />
+    <br />
+    <br />
+    <br />
 
-- Cars Page
+- ### User Profile Page
+    - <img src="./images/profile.png" alt="" />
 
-- Checkout and Checkout Summary Page
+    <br />
+    <br />
+    <br />
+    <br />
 
-- Payment Page
+- ### ZMS Page
+    - <img src="./images/zms.png" alt="" />
 
+    <br />
+    <br />
+    <br />
+    <br />
+
+- ### Become A Host Page
+    - <img src="./images/become-host.png" alt="" />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+- ### Cars Page
+    - <img src="./images/cars.png" alt="" />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+- ### Checkout and Checkout Summary Page
+    - <img src="./images/checkout.png" alt="" />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+- ### Payment Page
+    - <img src="./images/payments.png" alt="" />
+
+    <br />
+    <br />
+    <br />
+    <br />
 
 ## Execution
 
@@ -46,10 +98,10 @@ If you want to run our project in your local machine
 
 ## Creators
 
-- [Zuhed Shaikh](https://github.com/zuhedshaikh95)
+- [Zuhed Shaikh](https://github.com/zuhedshaikh95) (Project Lead)
 - [Raj Rathore](https://github.com/Raj-1313)
-- [Laxmi Priya]()
-- [Mitali Raj]()
+- [Ramyapriya Kota](https://github.com/kotaRamyapriya)
+- [Mitali Sinha](https://github.com/mira713)
 - [Prasad Karde](https://github.com/PrasadK05/)
 
 
